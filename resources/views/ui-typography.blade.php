@@ -4,19 +4,13 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Calendar | Upcube - Admin & Dashboard Template</title>
+        <title>Typography | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- Plugin css -->
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/core/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css">
-    
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -39,7 +33,7 @@
                     <div class="d-flex">
                         <!-- LOGO -->
                         <div class="navbar-brand-box">
-                            <a href="index.html" class="logo logo-dark">
+                            <a href="index" class="logo logo-dark">
                                 <span class="logo-sm">
                                     <img src="assets/images/logo-sm.png" alt="logo-sm" height="22">
                                 </span>
@@ -48,7 +42,7 @@
                                 </span>
                             </a>
 
-                            <a href="index.html" class="logo logo-light">
+                            <a href="/index" class="logo logo-light">
                                 <span class="logo-sm">
                                     <img src="assets/images/logo-sm.png" alt="logo-sm-light" height="22">
                                 </span>
@@ -441,7 +435,7 @@
                             <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="mt-3">
-                            <h4 class="font-size-16 mb-1">Anne Mery</h4>
+                            <h4 class="font-size-16 mb-1">Julia Hudda</h4>
                             <span class="text-muted"><i class="ri-record-circle-line align-middle font-size-14 text-success"></i> Online</span>
                         </div>
                     </div>
@@ -453,14 +447,14 @@
                             <li class="menu-title">Menu</li>
 
                             <li>
-                                <a href="index.html" class="waves-effect">
+                                <a href="/index" class="waves-effect">
                                     <i class="ri-dashboard-line"></i><span class="badge rounded-pill bg-success float-end">3</span>
                                     <span>Dashboard</span>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="calendar.html" class=" waves-effect">
+                                <a href="/calendar" class=" waves-effect">
                                     <i class="ri-calendar-2-line"></i>
                                     <span>Calendar</span>
                                 </a>
@@ -472,8 +466,8 @@
                                     <span>Email</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="email-inbox.html">Inbox</a></li>
-                                    <li><a href="email-read.html">Read Email</a></li>
+                                    <li><a href="/email-inbox">Inbox</a></li>
+                                    <li><a href="/email-read">Read Email</a></li>
                                 </ul>
                             </li>
 
@@ -486,23 +480,23 @@
                                     <li>
                                         <a href="javascript: void(0);" class="has-arrow">Vertical</a>
                                         <ul class="sub-menu" aria-expanded="true">
-                                            <li><a href="layouts-dark-sidebar.html">Dark Sidebar</a></li>
-                                            <li><a href="layouts-compact-sidebar.html">Compact Sidebar</a></li>
-                                            <li><a href="layouts-icon-sidebar.html">Icon Sidebar</a></li>
-                                            <li><a href="layouts-boxed.html">Boxed Layout</a></li>
-                                            <li><a href="layouts-preloader.html">Preloader</a></li>
-                                            <li><a href="layouts-colored-sidebar.html">Colored Sidebar</a></li>
+                                            <li><a href="/layouts-dark-sidebar">Dark Sidebar</a></li>
+                                            <li><a href="/layouts-compact-sidebar">Compact Sidebar</a></li>
+                                            <li><a href="/layouts-icon-sidebar">Icon Sidebar</a></li>
+                                            <li><a href="/layouts-boxed">Boxed Layout</a></li>
+                                            <li><a href="/layouts-preloader">Preloader</a></li>
+                                            <li><a href="/layouts-colored-sidebar">Colored Sidebar</a></li>
                                         </ul>
                                     </li>
 
                                     <li>
                                         <a href="javascript: void(0);" class="has-arrow">Horizontal</a>
                                         <ul class="sub-menu" aria-expanded="true">
-                                            <li><a href="layouts-horizontal.html">Horizontal</a></li>
-                                            <li><a href="layouts-hori-topbar-light.html">Topbar light</a></li>
-                                            <li><a href="layouts-hori-boxed-width.html">Boxed width</a></li>
-                                            <li><a href="layouts-hori-preloader.html">Preloader</a></li>
-                                            <li><a href="layouts-hori-colored-header.html">Colored Header</a></li>
+                                            <li><a href="/layouts-horizontal">Horizontal</a></li>
+                                            <li><a href="/layouts-hori-topbar-light">Topbar light</a></li>
+                                            <li><a href="/layouts-hori-boxed-width">Boxed width</a></li>
+                                            <li><a href="/layouts-hori-preloader">Preloader</a></li>
+                                            <li><a href="/layouts-hori-colored-header">Colored Header</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -516,10 +510,10 @@
                                     <span>Authentication</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="auth-login.html">Login</a></li>
-                                    <li><a href="auth-register.html">Register</a></li>
-                                    <li><a href="auth-recoverpw.html">Recover Password</a></li>
-                                    <li><a href="auth-lock-screen.html">Lock Screen</a></li>
+                                    <li><a href="/auth-login">Login</a></li>
+                                    <li><a href="/auth-register">Register</a></li>
+                                    <li><a href="/auth-recoverpw">Recover Password</a></li>
+                                    <li><a href="/auth-lock-screen">Lock Screen</a></li>
                                 </ul>
                             </li>
 
@@ -529,12 +523,12 @@
                                     <span>Utility</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="pages-starter.html">Starter Page</a></li>
-                                    <li><a href="pages-timeline.html">Timeline</a></li>
-                                    <li><a href="pages-directory.html">Directory</a></li>
-                                    <li><a href="pages-invoice.html">Invoice</a></li>
-                                    <li><a href="pages-404.html">Error 404</a></li>
-                                    <li><a href="pages-500.html">Error 500</a></li>
+                                    <li><a href="/pages-starter">Starter Page</a></li>
+                                    <li><a href="/pages-timeline">Timeline</a></li>
+                                    <li><a href="/pages-directory">Directory</a></li>
+                                    <li><a href="/pages-invoice">Invoice</a></li>
+                                    <li><a href="/pages-404">Error 404</a></li>
+                                    <li><a href="/pages-500">Error 500</a></li>
                                 </ul>
                             </li>
 
@@ -546,21 +540,21 @@
                                     <span>UI Elements</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="ui-alerts.html">Alerts</a></li>
-                                    <li><a href="ui-buttons.html">Buttons</a></li>
-                                    <li><a href="ui-cards.html">Cards</a></li>
-                                    <li><a href="ui-carousel.html">Carousel</a></li>
-                                    <li><a href="ui-dropdowns.html">Dropdowns</a></li>
-                                    <li><a href="ui-grid.html">Grid</a></li>
-                                    <li><a href="ui-images.html">Images</a></li>
-                                    <li><a href="ui-lightbox.html">Lightbox</a></li>
-                                    <li><a href="ui-modals.html">Modals</a></li>
-                                    <li><a href="ui-offcanvas.html">Offcavas</a></li>
-                                    <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                                    <li><a href="ui-tabs-accordions.html">Tabs & Accordions</a></li>
-                                    <li><a href="ui-typography.html">Typography</a></li>
-                                    <li><a href="ui-video.html">Video</a></li>
-                                    <li><a href="ui-general.html">General</a></li>
+                                    <li><a href="/ui-alerts">Alerts</a></li>
+                                    <li><a href="/ui-buttons">Buttons</a></li>
+                                    <li><a href="/ui-cards">Cards</a></li>
+                                    <li><a href="/ui-carousel">Carousel</a></li>
+                                    <li><a href="/ui-dropdowns">Dropdowns</a></li>
+                                    <li><a href="/ui-grid">Grid</a></li>
+                                    <li><a href="/ui-images">Images</a></li>
+                                    <li><a href="/ui-lightbox">Lightbox</a></li>
+                                    <li><a href="/ui-modals">Modals</a></li>
+                                    <li><a href="/ui-offcanvas">Offcavas</a></li>
+                                    <li><a href="/ui-progressbars">Progress Bars</a></li>
+                                    <li><a href="/ui-tabs-accordions">Tabs & Accordions</a></li>
+                                    <li><a href="/ui-typography">Typography</a></li>
+                                    <li><a href="/ui-video">Video</a></li>
+                                    <li><a href="/ui-general">General</a></li>
                         
                                 </ul>
                             </li>
@@ -571,12 +565,12 @@
                                     <span>Advanced UI</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="advance-rangeslider.html">Range Slider</a></li>
-                                    <li><a href="advance-roundslider.html">Round Slider</a></li>
-                                    <li><a href="advance-session-timeout.html">Session Timeout</a></li>
-                                    <li><a href="advance-sweet-alert.html">Sweetalert 2</a></li>
-                                    <li><a href="advance-rating.html">Rating</a></li>
-                                    <li><a href="advance-notifications.html">Notifications</a></li>
+                                    <li><a href="/advance-rangeslider">Range Slider</a></li>
+                                    <li><a href="/advance-roundslider">Round Slider</a></li>
+                                    <li><a href="/advance-session-timeout">Session Timeout</a></li>
+                                    <li><a href="/advance-sweet-alert">Sweetalert 2</a></li>
+                                    <li><a href="/advance-rating">Rating</a></li>
+                                    <li><a href="/advance-notifications">Notifications</a></li>
                                 </ul>
                             </li>
 
@@ -587,16 +581,16 @@
                                     <span>Forms</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="form-elements.html">Form Elements</a></li>
-                                    <li><a href="form-validation.html">Form Validation</a></li>
-                                    <li><a href="form-advanced.html">Form Advanced Plugins</a></li>
-                                    <li><a href="form-editors.html">Form Editors</a></li>
-                                    <li><a href="form-uploads.html">Form File Upload</a></li>
-                                    <li><a href="form-xeditable.html">Form X-editable</a></li>
-                                    <li><a href="form-wizard.html">Form Wizard</a></li>
-                                    <li><a href="form-mask.html">Form Mask</a></li>
+                                    <li><a href="/form-elements">Form Elements</a></li>
+                                    <li><a href="/form-validation">Form Validation</a></li>
+                                    <li><a href="/form-advanced">Form Advanced Plugins</a></li>
+                                    <li><a href="/form-editors">Form Editors</a></li>
+                                    <li><a href="/form-uploads">Form File Upload</a></li>
+                                    <li><a href="/form-xeditable">Form X-editable</a></li>
+                                    <li><a href="/form-wizard">Form Wizard</a></li>
+                                    <li><a href="/form-mask">Form Mask</a></li>
                                 </ul>
-                            </li>
+                            </li>/
 
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
@@ -604,10 +598,10 @@
                                     <span>Tables</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="tables-basic.html">Basic Tables</a></li>
-                                    <li><a href="tables-datatable.html">Data Tables</a></li>
-                                    <li><a href="tables-responsive.html">Responsive Table</a></li>
-                                    <li><a href="tables-editable.html">Editable Table</a></li>
+                                    <li><a href="/tables-basic">Basic Tables</a></li>
+                                    <li><a href="/tables-datatable">Data Tables</a></li>
+                                    <li><a href="/tables-responsive">Responsive Table</a></li>
+                                    <li><a href="/tables-editable">Editable Table</a></li>
                                 </ul>
                             </li>
 
@@ -617,11 +611,11 @@
                                     <span>Charts</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="charts-apex.html">Apex Charts</a></li>
-                                    <li><a href="charts-chartjs.html">Chartjs Charts</a></li>
-                                    <li><a href="charts-flot.html">Flot Charts</a></li>
-                                    <li><a href="charts-knob.html">Jquery Knob Charts</a></li>
-                                    <li><a href="charts-sparkline.html">Sparkline Charts</a></li>
+                                    <li><a href="/charts-apex">Apex Charts</a></li>
+                                    <li><a href="/charts-chartjs">Chartjs Charts</a></li>
+                                    <li><a href="/charts-flot">Flot Charts</a></li>
+                                    <li><a href="/charts-knob">Jquery Knob Charts</a></li>
+                                    <li><a href="/charts-sparkline">Sparkline Charts</a></li>
                                 </ul>
                             </li>
 
@@ -631,10 +625,10 @@
                                     <span>Icons</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="icons-remix.html">Remix Icons</a></li>
-                                    <li><a href="icons-materialdesign.html">Material Design</a></li>
-                                    <li><a href="icons-dripicons.html">Dripicons</a></li>
-                                    <li><a href="icons-fontawesome.html">Font awesome 5</a></li>
+                                    <li><a href="/icons-remix">Remix Icons</a></li>
+                                    <li><a href="/icons-materialdesign">Material Design</a></li>
+                                    <li><a href="/icons-dripicons">Dripicons</a></li>
+                                    <li><a href="/icons-fontawesome">Font awesome 5</a></li>
                                 </ul>
                             </li>
 
@@ -644,8 +638,8 @@
                                     <span>Maps</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="maps-google.html">Google Maps</a></li>
-                                    <li><a href="maps-vector.html">Vector Maps</a></li>
+                                    <li><a href="/maps-google">Google Maps</a></li>
+                                    <li><a href="/maps-vector">Vector Maps</a></li>
                                 </ul>
                             </li>
 
@@ -686,12 +680,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Calendar</h4>
+                                    <h4 class="mb-sm-0">Typography</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
-                                            <li class="breadcrumb-item active">Calendar</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
+                                            <li class="breadcrumb-item active">Typography</li>
                                         </ol>
                                     </div>
 
@@ -699,107 +693,209 @@
                             </div>
                         </div>
                         <!-- end page title -->
-                        
-                        <div class="row mb-4">
-                            <div class="col-xl-3">
-                                <div class="card h-100">
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
                                     <div class="card-body">
-                                        <button type="button" class="btn font-16 btn-primary waves-effect waves-light w-100"
-                                            id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal">
-                                            Create New Event
-                                        </button>
-            
-                                        <div id="external-events">
-                                            <br>
-                                            <p class="text-muted">Drag and drop your event or click in the calendar</p>
-                                            <div class="external-event fc-event bg-success" data-class="bg-success">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>New Event
-                                                Planning
+                                        <div class="d-flex">
+                                            <div class="ms-3 me-4">
+                                                <h1 class="display-4 mb-0">A</h1>
                                             </div>
-                                            <div class="external-event fc-event bg-info" data-class="bg-info">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Meeting
+                                            <div class="flex-1 align-self-center">
+                                                <p class="mb-2">Font Family</p>
+                                                <h5 class="mb-0">"Inter", sans-serif</h5>
                                             </div>
-                                            <div class="external-event fc-event bg-warning" data-class="bg-warning">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Generating
-                                                Reports
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Headings</h4>
+                                        <p class="card-title-desc">All HTML headings, <code
+                                                class="highlighter-rouge">&lt;h1&gt;</code> through <code
+                                                class="highlighter-rouge">&lt;h6&gt;</code>, are available.</p>
+        
+                                        <h1 class="mb-3">h1. Bootstrap heading <small class="text-muted">Semibold 2.25rem (36px)</small></h1>
+                                        <h2 class="mb-3">h2. Bootstrap heading <small class="text-muted">Semibold 1.8rem (28.8px)</small></h2>
+                                        <h3 class="mb-3">h3. Bootstrap heading <small class="text-muted">Semibold 1.575rem (25.2px)</small></h3>
+                                        <h4 class="mb-3">h4. Bootstrap heading <small class="text-muted">Semibold 1.35rem (21.6px)</small></h4>
+                                        <h5 class="mb-3">h5. Bootstrap heading <small class="text-muted">Semibold 1.125rem (18px)</small></h5>
+                                        <h6 class="mb-0">h6. Bootstrap heading <small class="text-muted">Semibold 0.9rem (14.4px)</small></h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Display headings</h4>
+                                        <p class="card-title-desc">Traditional heading elements are designed to work best in the meat of your page content. </p>
+        
+                                        <h1 class="display-1">Display 1</h1>
+                                        <h1 class="display-2">Display 2</h1>
+                                        <h1 class="display-3">Display 3</h1>
+                                        <h1 class="display-4">Display 4</h1>
+                                        <h1 class="display-5">Display 5</h1>
+                                        <h1 class="display-6 mb-0">Display 6</h1>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Inline text elements</h4>
+                                        <p class="card-title-desc">Styling for common inline HTML5 elements.</p>
+        
+                                        <p class="lead">
+                                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                                        </p>
+                                        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                                        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                                        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                                        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                                        <p><u>This line of text will render as underlined</u></p>
+                                        <p><small>This line of text is meant to be treated as fine print.</small></p>
+                                        <p><strong>This line rendered as bold text.</strong></p>
+                                        <p class="mb-0"><em>This line rendered as italicized text.</em></p>
+                                    </div>
+                                </div>
+        
+                                
+        
+                            </div> <!-- end col -->
+        
+                            <div class="col-xl-6">
+
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Unstyled List</h4>
+                                        <p class="card-title-desc">Remove the default <code
+                                                class="highlighter-rouge">list-style</code> and left margin on list
+                                            items (immediate children only). <strong>This only applies to immediate
+                                                children list items</strong>, meaning you will need to add the class
+                                            for any nested lists as well.</p>
+        
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Integer molestie lorem at massa</li>
+                                            <li>Nulla volutpat aliquam velit
+                                                <ul>
+                                                    <li>Phasellus iaculis neque</li>
+                                                    <li>Purus sodales ultricies</li>
+                                                    <li>Vestibulum laoreet porttitor sem</li>
+                                                </ul>
+                                            </li>
+                                            <li>Faucibus porta lacus fringilla vel</li>
+                                        </ul>
+                                    </div>
+                                </div>
+        
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Inline List</h4>
+                                        <p class="card-title-desc">Remove a list’s bullets and apply some
+                                            light <code class="highlighter-rouge">margin</code> with a combination
+                                            of two classes, <code class="highlighter-rouge">.list-inline</code> and
+                                            <code class="highlighter-rouge">.list-inline-item</code>.</p>
+        
+                                        <ul class="list-inline mb-0">
+                                            <li class="list-inline-item">Lorem ipsum</li>
+                                            <li class="list-inline-item">Phasellus iaculis</li>
+                                            <li class="list-inline-item">Nulla volutpat</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+        
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Blockquotes</h4>
+                                        <p class="card-title-desc">For quoting blocks of content from
+                                            another source within your document. Wrap <code
+                                                    class="highlighter-rouge">&lt;blockquote
+                                                class="blockquote"&gt;</code> around any <abbr
+                                                    title="HyperText Markup Language">HTML</abbr> as the quote.</p>
+        
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div>
+                                                    <blockquote class="blockquote font-size-16 mb-0">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                        <footer class="blockquote-footer m-0">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                    </blockquote>
+                                                </div>
                                             </div>
-                                            <div class="external-event fc-event bg-danger" data-class="bg-danger">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Create
-                                                New theme
+                                            <div class="col-xl-6">
+                                                <div class="mt-4 mt-lg-0">
+                                                    <blockquote class="blockquote  blockquote-reverse font-size-16 mb-0">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                                        <footer class="blockquote-footer m-0">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                    </blockquote>
+                                                </div>
                                             </div>
                                         </div>
                                         
                                     </div>
                                 </div>
-                            </div> <!-- end col-->
-                            <div class="col-xl-9">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <div id="calendar"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- end col -->
-                        </div> <!-- end row-->
-                        <div style='clear:both'></div>
-            
-                        <!-- Add New Event MODAL -->
-                        <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header py-3 px-4">
-                                        <h5 class="modal-title" id="modal-title">Event</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-            
-                                    <div class="modal-body p-4">
-                                        <form class="needs-validation" name="event-form" id="form-event" novalidate>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Event Name</label>
-                                                        <input class="form-control" placeholder="Insert Event Name" type="text"
-                                                            name="title" id="event-title" required value="">
-                                                        <div class="invalid-feedback">Please provide a valid event name
-                                                        </div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Category</label>
-                                                        <select class="form-select" name="category" id="event-category">
-                                                            <option  selected> --Select-- </option>
-                                                            <option value="bg-danger">Danger</option>
-                                                            <option value="bg-success">Success</option>
-                                                            <option value="bg-primary">Primary</option>
-                                                            <option value="bg-info">Info</option>
-                                                            <option value="bg-dark">Dark</option>
-                                                            <option value="bg-warning">Warning</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a valid event
-                                                            category</div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                            <div class="row mt-2">
-                                                <div class="col-6">
-                                                    <button type="button" class="btn btn-danger"
-                                                        id="btn-delete-event">Delete</button>
-                                                </div> <!-- end col-->
-                                                <div class="col-6 text-end">
-                                                    <button type="button" class="btn btn-light me-1"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                        </form>
-                                    </div>
-                                </div>
-                                <!-- end modal-content-->
                             </div>
-                            <!-- end modal dialog-->
                         </div>
-                        <!-- end modal-->
+                        <!-- end row -->
+        
+                        <div class="row">
+                            <div class="col-12">
+        
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Description list alignment</h4>
+                                        <p class="card-title-desc">Align terms and descriptions
+                                            horizontally by using our grid system’s predefined classes (or semantic
+                                            mixins). For longer terms, you can optionally add a <code
+                                                    class="highlighter-rouge">.text-truncate</code> class to
+                                            truncate the text with an ellipsis.</p>
+        
+                                        <dl class="row mb-0">
+                                            <dt class="col-sm-3">Description lists</dt>
+                                            <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+        
+                                            <dt class="col-sm-3">Euismod</dt>
+                                            <dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                            <dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+        
+                                            <dt class="col-sm-3">Malesuada porta</dt>
+                                            <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+        
+                                            <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                                            <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+        
+                                            <dt class="col-sm-3">Nesting</dt>
+                                            <dd class="col-sm-9 mb-0">
+                                                <dl class="row mb-0">
+                                                    <dt class="col-sm-4">Nested definition list</dt>
+                                                    <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                                                </dl>
+                                            </dd>
+                                        </dl>
+        
+                                    </div>
+                                </div>
+        
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
                         
                     </div> <!-- container-fluid -->
                 </div>
@@ -884,18 +980,6 @@
         <script src="assets/libs/metismenu/metisMenu.min.js"></script>
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
-
-        <!-- plugin js -->
-        <script src="assets/libs/moment/min/moment.min.js"></script>
-        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-        <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
-
-        <!-- Calendar init -->
-        <script src="assets/js/pages/calendar.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 

@@ -4,19 +4,13 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Calendar | Upcube - Admin & Dashboard Template</title>
+        <title>Inbox | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- Plugin css -->
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/core/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css">
-    
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -686,12 +680,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Calendar</h4>
+                                    <h4 class="mb-sm-0">Inbox</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
-                                            <li class="breadcrumb-item active">Calendar</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Email</a></li>
+                                            <li class="breadcrumb-item active">Inbox</li>
                                         </ol>
                                     </div>
 
@@ -700,110 +694,449 @@
                         </div>
                         <!-- end page title -->
                         
-                        <div class="row mb-4">
-                            <div class="col-xl-3">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <button type="button" class="btn font-16 btn-primary waves-effect waves-light w-100"
-                                            id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal">
-                                            Create New Event
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Left sidebar -->
+                                <div class="email-leftbar card">
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-danger waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
+                                            Compose
                                         </button>
+                                    </div>
+                                    <div class="mail-list mt-4">
+                                        <a href="#" class="active"><i class="mdi mdi-email-outline me-2"></i> Inbox <span class="ms-1 float-end">(18)</span></a>
+                                        <a href="#"><i class="mdi mdi-star-outline me-2"></i>Starred</a>
+                                        <a href="#"><i class="mdi mdi-diamond-stone me-2"></i>Important</a>
+                                        <a href="#"><i class="mdi mdi-file-outline me-2"></i>Draft</a>
+                                        <a href="#"><i class="mdi mdi-email-check-outline me-2"></i>Sent Mail</a>
+                                        <a href="#"><i class="mdi mdi-trash-can-outline me-2"></i>Trash</a>
+                                    </div>
+        
+        
+                                    <h6 class="mt-4">Labels</h6>
+        
+                                    <div class="mail-list mt-1">
+                                        <a href="#"><span class="mdi mdi-circle-outline text-info float-end"></span>Theme Support</a>
+                                        <a href="#"><span class="mdi mdi-circle-outline text-warning float-end"></span>Freelance</a>
+                                        <a href="#"><span class="mdi mdi-circle-outline text-primary float-end"></span>Social</a>
+                                        <a href="#"><span class="mdi mdi-circle-outline text-danger float-end"></span>Friends</a>
+                                        <a href="#"><span class="mdi mdi-circle-outline text-success float-end"></span>Family</a>
+                                    </div>
+        
+                                    <h6 class="mt-4">Chat</h6>
+        
+                                    <div class="mt-2">
+                                        <a href="#" class="d-flex">
+                                            <img class="d-flex me-3 rounded-circle" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image" height="36">
+                                            <div class="flex-1 chat-user-box overflow-hidden">
+                                                <p class="user-title m-0">Scott Median</p>
+                                                <p class="text-muted text-truncate">Hello</p>
+                                            </div>
+                                        </a>
+        
+                                        <a href="#" class="d-flex">
+                                            <img class="d-flex me-3 rounded-circle" src="assets/images/users/avatar-3.jpg" alt="Generic placeholder image" height="36">
+                                            <div class="flex-1 chat-user-box overflow-hidden">
+                                                <p class="user-title m-0">Julian Rosa</p>
+                                                <p class="text-muted text-truncate">What about our next..</p>
+                                            </div>
+                                        </a>
+        
+                                        <a href="#" class="d-flex">
+                                            <img class="d-flex me-3 rounded-circle" src="assets/images/users/avatar-4.jpg" alt="Generic placeholder image" height="36">
+                                            <div class="flex-1 chat-user-box overflow-hidden">
+                                                <p class="user-title m-0">David Medina</p>
+                                                <p class="text-muted text-truncate">Yeah everything is fine</p>
+                                            </div>
+                                        </a>
+        
+                                        <a href="#" class="d-flex">
+                                            <img class="d-flex me-3 rounded-circle" src="assets/images/users/avatar-6.jpg" alt="Generic placeholder image" height="36">
+                                            <div class="flex-1 chat-user-box overflow-hidden">
+                                                <p class="user-title m-0">Jay Baker</p>
+                                                <p class="text-muted text-truncate">Wow that's great</p>
+                                            </div>
+                                        </a>
+        
+                                    </div>
+                                </div>
+                                <!-- End Left sidebar -->
+        
+        
+                                <!-- Right Sidebar -->
+                                <div class="email-rightbar mb-3">
+                                    
+                                    <div class="card">
+                                        <div class="btn-toolbar p-3" role="toolbar">
+                                            <div class="btn-group me-2 mb-2 mb-sm-0">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-inbox"></i></button>
+                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-exclamation-circle"></i></button>
+                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="far fa-trash-alt"></i></button>
+                                            </div>
+                                            <div class="btn-group me-2 mb-2 mb-sm-0">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-folder"></i> <i class="mdi mdi-chevron-down ms-1"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Updates</a>
+                                                    <a class="dropdown-item" href="#">Social</a>
+                                                    <a class="dropdown-item" href="#">Team Manage</a>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group me-2 mb-2 mb-sm-0">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-tag"></i> <i class="mdi mdi-chevron-down ms-1"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Updates</a>
+                                                    <a class="dropdown-item" href="#">Social</a>
+                                                    <a class="dropdown-item" href="#">Team Manage</a>
+                                                </div>
+                                            </div>
             
-                                        <div id="external-events">
-                                            <br>
-                                            <p class="text-muted">Drag and drop your event or click in the calendar</p>
-                                            <div class="external-event fc-event bg-success" data-class="bg-success">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>New Event
-                                                Planning
-                                            </div>
-                                            <div class="external-event fc-event bg-info" data-class="bg-info">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Meeting
-                                            </div>
-                                            <div class="external-event fc-event bg-warning" data-class="bg-warning">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Generating
-                                                Reports
-                                            </div>
-                                            <div class="external-event fc-event bg-danger" data-class="bg-danger">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Create
-                                                New theme
+                                            <div class="btn-group me-2 mb-2 mb-sm-0">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    More <i class="mdi mdi-dots-vertical ms-2"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Mark as Unread</a>
+                                                    <a class="dropdown-item" href="#">Mark as Important</a>
+                                                    <a class="dropdown-item" href="#">Add to Tasks</a>
+                                                    <a class="dropdown-item" href="#">Add Star</a>
+                                                    <a class="dropdown-item" href="#">Mute</a>
+                                                </div>
                                             </div>
                                         </div>
-                                        
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
-                            <div class="col-xl-9">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <div id="calendar"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- end col -->
-                        </div> <!-- end row-->
-                        <div style='clear:both'></div>
-            
-                        <!-- Add New Event MODAL -->
-                        <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header py-3 px-4">
-                                        <h5 class="modal-title" id="modal-title">Event</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-            
-                                    <div class="modal-body p-4">
-                                        <form class="needs-validation" name="event-form" id="form-event" novalidate>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Event Name</label>
-                                                        <input class="form-control" placeholder="Insert Event Name" type="text"
-                                                            name="title" id="event-title" required value="">
-                                                        <div class="invalid-feedback">Please provide a valid event name
-                                                        </div>
+                                        <ul class="message-list">
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk19">
+                                                        <label class="form-label" for="chk19" class="toggle"></label>
                                                     </div>
-                                                </div> <!-- end col-->
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Category</label>
-                                                        <select class="form-select" name="category" id="event-category">
-                                                            <option  selected> --Select-- </option>
-                                                            <option value="bg-danger">Danger</option>
-                                                            <option value="bg-success">Success</option>
-                                                            <option value="bg-primary">Primary</option>
-                                                            <option value="bg-info">Info</option>
-                                                            <option value="bg-dark">Dark</option>
-                                                            <option value="bg-warning">Warning</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a valid event
-                                                            category</div>
+                                                    <a href="#" class="title">Peter, me (3)</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Hello – <span class="teaser">Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</span>
+                                                    </a>
+                                                    <div class="date">Mar 6</div>
+                                                </div>
+                                            </li>
+                
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk20">
+                                                        <label class="form-label" for="chk20" class="toggle"></label>
                                                     </div>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                            <div class="row mt-2">
-                                                <div class="col-6">
-                                                    <button type="button" class="btn btn-danger"
-                                                        id="btn-delete-event">Delete</button>
-                                                </div> <!-- end col-->
-                                                <div class="col-6 text-end">
-                                                    <button type="button" class="btn btn-light me-1"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                        </form>
+                                                    <a href="#" class="title">me, Susanna (7)</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject"><span class="bg-warning badge me-2">Freelance</span>Since you asked... and i'm
+                                                        inconceivably bored at the train station –
+                                                        <span class="teaser">Alright thanks. I'll have to re-book that somehow, i'll get back to you.</span>
+                                                    </a>
+                                                    <div class="date">Mar. 6</div>
+                                                </div>
+                                            </li>
+        
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk6">
+                                                        <label class="form-label" for="chk6" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Web Support Dennis</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Re: New mail settings – 
+                                                        <span class="teaser">Will you answer him asap?</span>
+                                                    </a>
+                                                    <div class="date">Mar 7</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk7">
+                                                        <label class="form-label" for="chk7" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">me, Peter (2)</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject"><span class="bg-info badge me-2">Support</span>Off on Thursday - 
+                                                        <span class="teaser">Eff that place, you might as well stay here with us instead! Sent from my iPhone 4  4 mar 2014 at 5:55 pm</span>
+                                                    </a>
+                                                    <div class="date">Mar 4</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk8">
+                                                        <label class="form-label" for="chk8" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Medium</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject"><span class="bg-primary badge me-2">Social</span>This Week's Top Stories – 
+                                                        <span class="teaser">Our top pick for you on Medium this week The Man Who Destroyed America’s Ego</span>
+                                                    </a>
+                                                    <div class="date">Feb 28</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk9">
+                                                        <label class="form-label" for="chk9" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Death to Stock</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Montly High-Res Photos – 
+                                                        <span class="teaser">To create this month's pack, we hosted a party with local musician Jared Mahone here in Columbus, Ohio.</span>
+                                                    </a>
+                                                    <div class="date">Feb 28</div>
+                                                </div>
+                                            </li>
+        
+                                            <li class="unread">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk3">
+                                                        <label class="form-label" for="chk3" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Randy, me (5)</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject"><span class="bg-success badge me-2">Family</span>Last pic over my village – 
+                                                        <span class="teaser">Yeah i'd like that! Do you remember the video you showed me of your train ride between Colombo and Kandy? The one with the mountain view? I would love to see that one again!</span>
+                                                    </a>
+                                                    <div class="date">5:01 am</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk4">
+                                                        <label class="form-label" for="chk4" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Andrew Zimmer</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Mochila Beta: Subscription Confirmed
+                                                        – <span class="teaser">You've been confirmed! Welcome to the ruling class of the inbox. For your records, here is a copy of the information you submitted to us...</span>
+                                                    </a>
+                                                    <div class="date">Mar 8</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk5">
+                                                        <label class="form-label" for="chk5" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Infinity HR</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Sveriges Hetaste sommarjobb –
+                                                        <span class="teaser">Hej Nicklas Sandell! Vi vill bjuda in dig till "First tour 2014", ett rekryteringsevent som erbjuder jobb på 16 semesterorter iSverige.</span>
+                                                    </a>
+                                                    <div class="date">Mar 8</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk10">
+                                                        <label class="form-label" for="chk10" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Revibe</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject"><span class="bg-danger badge me-2">Friends</span>Weekend on Revibe – 
+                                                        <span class="teaser">Today's Friday and we thought maybe you want some music inspiration for the weekend. Here are some trending tracks and playlists we think you should give a listen!</span>
+                                                    </a>
+                                                    <div class="date">Feb 27</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk11">
+                                                        <label class="form-label" for="chk11" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Erik, me (5)</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Regarding our meeting – 
+                                                        <span class="teaser">That's great, see you on Thursday!</span>
+                                                    </a>
+                                                    <div class="date">Feb 24</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk12">
+                                                        <label class="form-label" for="chk12" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">KanbanFlow</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject"><span class="bg-primary badge me-2">Social</span>Task assigned: Clone ARP's website
+                                                        – <span class="teaser">You have been assigned a task by Alex@Work on the board Web.</span>
+                                                    </a>
+                                                    <div class="date">Feb 24</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk13">
+                                                        <label class="form-label" for="chk13" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Tobias Berggren</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Let's go fishing! – 
+                                                        <span class="teaser">Hey, You wanna join me and Fred at the lake tomorrow? It'll be awesome.</span>
+                                                    </a>
+                                                    <div class="date">Feb 23</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk14">
+                                                        <label class="form-label" for="chk14" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Charukaw, me (7)</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Hey man – <span class="teaser">Nah man sorry i don't. Should i get it?</span>
+                                                    </a>
+                                                    <div class="date">Feb 23</div>
+                                                </div>
+                                            </li>
+                                            <li class="unread">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk15">
+                                                        <label class="form-label" for="chk15" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">me, Peter (5)</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject"><span class="bg-info badge me-2">Support</span>Home again! – <span class="teaser">That's just perfect! See you tomorrow.</span>
+                                                    </a>
+                                                    <div class="date">Feb 21</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk16">
+                                                        <label class="form-label" for="chk16" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Stack Exchange</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">1 new items in your Stackexchange inbox
+                                                        – <span class="teaser">The following items were added to your Stack Exchange global inbox since you last checked it.</span>
+                                                    </a>
+                                                    <div class="date">Feb 21</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk17">
+                                                        <label class="form-label" for="chk17" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">Google Drive Team</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">You can now use your storage in Google
+                                                        Drive – <span class="teaser">Hey Nicklas Sandell! Thank you for purchasing extra storage space in Google Drive.</span>
+                                                    </a>
+                                                    <div class="date">Feb 20</div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk18">
+                                                        <label class="form-label" for="chk18" class="toggle"></label>
+                                                    </div>
+                                                    <a href="#" class="title">me, Susanna (11)</a><span class="star-toggle far fa-star"></span>
+                                                </div>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="#" class="subject">Train/Bus – <span class="teaser">Yes ok, great! I'm not stuck in Stockholm anymore, we're making progress.</span>
+                                                    </a>
+                                                    <div class="date">Feb 19</div>
+                                                </div>
+                                            </li>
+        
+                                        </ul>
+        
+                                    </div> <!-- card -->
+        
+                                    <div class="row">
+                                        <div class="col-7">
+                                            Showing 1 - 20 of 1,524
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="btn-group float-end">
+                                                <button type="button" class="btn btn-sm btn-success waves-effect"><i class="fa fa-chevron-left"></i></button>
+                                                <button type="button" class="btn btn-sm btn-success waves-effect"><i class="fa fa-chevron-right"></i></button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <!-- end modal-content-->
+        
+                                </div> <!-- end Col-9 -->
+        
                             </div>
-                            <!-- end modal dialog-->
-                        </div>
-                        <!-- end modal-->
-                        
+        
+                        </div><!-- End row -->
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="composemodal" tabindex="-1" role="dialog" aria-labelledby="composemodalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="composemodalTitle">New Message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="To">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="mb-3">
+                                        <form method="post">
+                                            <textarea id="elm1" name="area"></textarea>
+                                        </form>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send <i class="fab fa-telegram-plane ms-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <footer class="footer">
                     <div class="container-fluid">
@@ -819,7 +1152,6 @@
                         </div>
                     </div>
                 </footer>
-                
             </div>
             <!-- end main content-->
 
@@ -885,17 +1217,11 @@
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- plugin js -->
-        <script src="assets/libs/moment/min/moment.min.js"></script>
-        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-        <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
+        <!--tinymce js-->
+        <script src="assets/libs/tinymce/tinymce.min.js"></script>
 
-        <!-- Calendar init -->
-        <script src="assets/js/pages/calendar.init.js"></script>
+        <!-- init js -->
+        <script src="assets/js/pages/form-editor.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 

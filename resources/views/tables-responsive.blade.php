@@ -4,19 +4,16 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Calendar | Upcube - Admin & Dashboard Template</title>
+        <title>Responsive Table | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- Plugin css -->
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/core/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css">
-    
+        <!-- Responsive Table css -->
+        <link href="assets/libs/admin-resources/rwd-table/rwd-table.min.css" rel="stylesheet" type="text/css" />
+        
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -441,7 +438,7 @@
                             <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="mt-3">
-                            <h4 class="font-size-16 mb-1">Anne Mery</h4>
+                            <h4 class="font-size-16 mb-1">Julia Hudda</h4>
                             <span class="text-muted"><i class="ri-record-circle-line align-middle font-size-14 text-success"></i> Online</span>
                         </div>
                     </div>
@@ -686,12 +683,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Calendar</h4>
+                                    <h4 class="mb-sm-0">Responsive Table</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
-                                            <li class="breadcrumb-item active">Calendar</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
+                                            <li class="breadcrumb-item active">Responsive Table</li>
                                         </ol>
                                     </div>
 
@@ -700,107 +697,431 @@
                         </div>
                         <!-- end page title -->
                         
-                        <div class="row mb-4">
-                            <div class="col-xl-3">
-                                <div class="card h-100">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
                                     <div class="card-body">
-                                        <button type="button" class="btn font-16 btn-primary waves-effect waves-light w-100"
-                                            id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal">
-                                            Create New Event
-                                        </button>
-            
-                                        <div id="external-events">
-                                            <br>
-                                            <p class="text-muted">Drag and drop your event or click in the calendar</p>
-                                            <div class="external-event fc-event bg-success" data-class="bg-success">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>New Event
-                                                Planning
+        
+                                        <h4 class="card-title">Example</h4>
+                                        <p class="card-title-desc">This is an experimental awesome solution for responsive tables with complex data.</p>
+        
+                                        <div class="table-rep-plugin">
+                                            <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                                <table id="tech-companies-1" class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Company</th>
+                                                        <th data-priority="1">Last Trade</th>
+                                                        <th data-priority="3">Trade Time</th>
+                                                        <th data-priority="1">Change</th>
+                                                        <th data-priority="3">Prev Close</th>
+                                                        <th data-priority="3">Open</th>
+                                                        <th data-priority="6">Bid</th>
+                                                        <th data-priority="6">Ask</th>
+                                                        <th data-priority="6">1y Target Est</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <th>GOOG <span class="co-name">Google Inc.</span></th>
+                                                        <td>597.74</td>
+                                                        <td>12:12PM</td>
+                                                        <td>14.81 (2.54%)</td>
+                                                        <td>582.93</td>
+                                                        <td>597.95</td>
+                                                        <td>597.73 x 100</td>
+                                                        <td>597.91 x 300</td>
+                                                        <td>731.10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AAPL <span class="co-name">Apple Inc.</span></th>
+                                                        <td>378.94</td>
+                                                        <td>12:22PM</td>
+                                                        <td>5.74 (1.54%)</td>
+                                                        <td>373.20</td>
+                                                        <td>381.02</td>
+                                                        <td>378.92 x 300</td>
+                                                        <td>378.99 x 100</td>
+                                                        <td>505.94</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AMZN <span class="co-name">Amazon.com Inc.</span></th>
+                                                        <td>191.55</td>
+                                                        <td>12:23PM</td>
+                                                        <td>3.16 (1.68%)</td>
+                                                        <td>188.39</td>
+                                                        <td>194.99</td>
+                                                        <td>191.52 x 300</td>
+                                                        <td>191.58 x 100</td>
+                                                        <td>240.32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>ORCL <span class="co-name">Oracle Corporation</span></th>
+                                                        <td>31.15</td>
+                                                        <td>12:44PM</td>
+                                                        <td>1.41 (4.72%)</td>
+                                                        <td>29.74</td>
+                                                        <td>30.67</td>
+                                                        <td>31.14 x 6500</td>
+                                                        <td>31.15 x 3200</td>
+                                                        <td>36.11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>MSFT <span class="co-name">Microsoft Corporation</span></th>
+                                                        <td>25.50</td>
+                                                        <td>12:27PM</td>
+                                                        <td>0.66 (2.67%)</td>
+                                                        <td>24.84</td>
+                                                        <td>25.37</td>
+                                                        <td>25.50 x 71100</td>
+                                                        <td>25.51 x 17800</td>
+                                                        <td>31.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
+                                                        <td>18.65</td>
+                                                        <td>12:45PM</td>
+                                                        <td>0.97 (5.49%)</td>
+                                                        <td>17.68</td>
+                                                        <td>18.23</td>
+                                                        <td>18.65 x 10300</td>
+                                                        <td>18.66 x 24000</td>
+                                                        <td>21.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>YHOO <span class="co-name">Yahoo! Inc.</span></th>
+                                                        <td>15.81</td>
+                                                        <td>12:25PM</td>
+                                                        <td>0.11 (0.67%)</td>
+                                                        <td>15.70</td>
+                                                        <td>15.94</td>
+                                                        <td>15.79 x 6100</td>
+                                                        <td>15.80 x 17000</td>
+                                                        <td>18.16</td>
+                                                    </tr>
+                                                    <!-- Repeat -->
+                                                    <tr>
+                                                        <th>GOOG <span class="co-name">Google Inc.</span></th>
+                                                        <td>597.74</td>
+                                                        <td>12:12PM</td>
+                                                        <td>14.81 (2.54%)</td>
+                                                        <td>582.93</td>
+                                                        <td>597.95</td>
+                                                        <td>597.73 x 100</td>
+                                                        <td>597.91 x 300</td>
+                                                        <td>731.10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AAPL <span class="co-name">Apple Inc.</span></th>
+                                                        <td>378.94</td>
+                                                        <td>12:22PM</td>
+                                                        <td>5.74 (1.54%)</td>
+                                                        <td>373.20</td>
+                                                        <td>381.02</td>
+                                                        <td>378.92 x 300</td>
+                                                        <td>378.99 x 100</td>
+                                                        <td>505.94</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AMZN <span class="co-name">Amazon.com Inc.</span></th>
+                                                        <td>191.55</td>
+                                                        <td>12:23PM</td>
+                                                        <td>3.16 (1.68%)</td>
+                                                        <td>188.39</td>
+                                                        <td>194.99</td>
+                                                        <td>191.52 x 300</td>
+                                                        <td>191.58 x 100</td>
+                                                        <td>240.32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>ORCL <span class="co-name">Oracle Corporation</span></th>
+                                                        <td>31.15</td>
+                                                        <td>12:44PM</td>
+                                                        <td>1.41 (4.72%)</td>
+                                                        <td>29.74</td>
+                                                        <td>30.67</td>
+                                                        <td>31.14 x 6500</td>
+                                                        <td>31.15 x 3200</td>
+                                                        <td>36.11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>MSFT <span class="co-name">Microsoft Corporation</span></th>
+                                                        <td>25.50</td>
+                                                        <td>12:27PM</td>
+                                                        <td>0.66 (2.67%)</td>
+                                                        <td>24.84</td>
+                                                        <td>25.37</td>
+                                                        <td>25.50 x 71100</td>
+                                                        <td>25.51 x 17800</td>
+                                                        <td>31.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
+                                                        <td>18.65</td>
+                                                        <td>12:45PM</td>
+                                                        <td>0.97 (5.49%)</td>
+                                                        <td>17.68</td>
+                                                        <td>18.23</td>
+                                                        <td>18.65 x 10300</td>
+                                                        <td>18.66 x 24000</td>
+                                                        <td>21.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>YHOO <span class="co-name">Yahoo! Inc.</span></th>
+                                                        <td>15.81</td>
+                                                        <td>12:25PM</td>
+                                                        <td>0.11 (0.67%)</td>
+                                                        <td>15.70</td>
+                                                        <td>15.94</td>
+                                                        <td>15.79 x 6100</td>
+                                                        <td>15.80 x 17000</td>
+                                                        <td>18.16</td>
+                                                    </tr>
+                                                    <!-- Repeat -->
+                                                    <tr>
+                                                        <th>GOOG <span class="co-name">Google Inc.</span></th>
+                                                        <td>597.74</td>
+                                                        <td>12:12PM</td>
+                                                        <td>14.81 (2.54%)</td>
+                                                        <td>582.93</td>
+                                                        <td>597.95</td>
+                                                        <td>597.73 x 100</td>
+                                                        <td>597.91 x 300</td>
+                                                        <td>731.10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AAPL <span class="co-name">Apple Inc.</span></th>
+                                                        <td>378.94</td>
+                                                        <td>12:22PM</td>
+                                                        <td>5.74 (1.54%)</td>
+                                                        <td>373.20</td>
+                                                        <td>381.02</td>
+                                                        <td>378.92 x 300</td>
+                                                        <td>378.99 x 100</td>
+                                                        <td>505.94</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AMZN <span class="co-name">Amazon.com Inc.</span></th>
+                                                        <td>191.55</td>
+                                                        <td>12:23PM</td>
+                                                        <td>3.16 (1.68%)</td>
+                                                        <td>188.39</td>
+                                                        <td>194.99</td>
+                                                        <td>191.52 x 300</td>
+                                                        <td>191.58 x 100</td>
+                                                        <td>240.32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>ORCL <span class="co-name">Oracle Corporation</span></th>
+                                                        <td>31.15</td>
+                                                        <td>12:44PM</td>
+                                                        <td>1.41 (4.72%)</td>
+                                                        <td>29.74</td>
+                                                        <td>30.67</td>
+                                                        <td>31.14 x 6500</td>
+                                                        <td>31.15 x 3200</td>
+                                                        <td>36.11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>MSFT <span class="co-name">Microsoft Corporation</span></th>
+                                                        <td>25.50</td>
+                                                        <td>12:27PM</td>
+                                                        <td>0.66 (2.67%)</td>
+                                                        <td>24.84</td>
+                                                        <td>25.37</td>
+                                                        <td>25.50 x 71100</td>
+                                                        <td>25.51 x 17800</td>
+                                                        <td>31.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
+                                                        <td>18.65</td>
+                                                        <td>12:45PM</td>
+                                                        <td>0.97 (5.49%)</td>
+                                                        <td>17.68</td>
+                                                        <td>18.23</td>
+                                                        <td>18.65 x 10300</td>
+                                                        <td>18.66 x 24000</td>
+                                                        <td>21.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>YHOO <span class="co-name">Yahoo! Inc.</span></th>
+                                                        <td>15.81</td>
+                                                        <td>12:25PM</td>
+                                                        <td>0.11 (0.67%)</td>
+                                                        <td>15.70</td>
+                                                        <td>15.94</td>
+                                                        <td>15.79 x 6100</td>
+                                                        <td>15.80 x 17000</td>
+                                                        <td>18.16</td>
+                                                    </tr>
+                                                    <!-- Repeat -->
+                                                    <tr>
+                                                        <th>GOOG <span class="co-name">Google Inc.</span></th>
+                                                        <td>597.74</td>
+                                                        <td>12:12PM</td>
+                                                        <td>14.81 (2.54%)</td>
+                                                        <td>582.93</td>
+                                                        <td>597.95</td>
+                                                        <td>597.73 x 100</td>
+                                                        <td>597.91 x 300</td>
+                                                        <td>731.10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AAPL <span class="co-name">Apple Inc.</span></th>
+                                                        <td>378.94</td>
+                                                        <td>12:22PM</td>
+                                                        <td>5.74 (1.54%)</td>
+                                                        <td>373.20</td>
+                                                        <td>381.02</td>
+                                                        <td>378.92 x 300</td>
+                                                        <td>378.99 x 100</td>
+                                                        <td>505.94</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AMZN <span class="co-name">Amazon.com Inc.</span></th>
+                                                        <td>191.55</td>
+                                                        <td>12:23PM</td>
+                                                        <td>3.16 (1.68%)</td>
+                                                        <td>188.39</td>
+                                                        <td>194.99</td>
+                                                        <td>191.52 x 300</td>
+                                                        <td>191.58 x 100</td>
+                                                        <td>240.32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>ORCL <span class="co-name">Oracle Corporation</span></th>
+                                                        <td>31.15</td>
+                                                        <td>12:44PM</td>
+                                                        <td>1.41 (4.72%)</td>
+                                                        <td>29.74</td>
+                                                        <td>30.67</td>
+                                                        <td>31.14 x 6500</td>
+                                                        <td>31.15 x 3200</td>
+                                                        <td>36.11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>MSFT <span class="co-name">Microsoft Corporation</span></th>
+                                                        <td>25.50</td>
+                                                        <td>12:27PM</td>
+                                                        <td>0.66 (2.67%)</td>
+                                                        <td>24.84</td>
+                                                        <td>25.37</td>
+                                                        <td>25.50 x 71100</td>
+                                                        <td>25.51 x 17800</td>
+                                                        <td>31.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
+                                                        <td>18.65</td>
+                                                        <td>12:45PM</td>
+                                                        <td>0.97 (5.49%)</td>
+                                                        <td>17.68</td>
+                                                        <td>18.23</td>
+                                                        <td>18.65 x 10300</td>
+                                                        <td>18.66 x 24000</td>
+                                                        <td>21.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>YHOO <span class="co-name">Yahoo! Inc.</span></th>
+                                                        <td>15.81</td>
+                                                        <td>12:25PM</td>
+                                                        <td>0.11 (0.67%)</td>
+                                                        <td>15.70</td>
+                                                        <td>15.94</td>
+                                                        <td>15.79 x 6100</td>
+                                                        <td>15.80 x 17000</td>
+                                                        <td>18.16</td>
+                                                    </tr>
+                                                    <!-- Repeat -->
+                                                    <tr>
+                                                        <th>GOOG <span class="co-name">Google Inc.</span></th>
+                                                        <td>597.74</td>
+                                                        <td>12:12PM</td>
+                                                        <td>14.81 (2.54%)</td>
+                                                        <td>582.93</td>
+                                                        <td>597.95</td>
+                                                        <td>597.73 x 100</td>
+                                                        <td>597.91 x 300</td>
+                                                        <td>731.10</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AAPL <span class="co-name">Apple Inc.</span></th>
+                                                        <td>378.94</td>
+                                                        <td>12:22PM</td>
+                                                        <td>5.74 (1.54%)</td>
+                                                        <td>373.20</td>
+                                                        <td>381.02</td>
+                                                        <td>378.92 x 300</td>
+                                                        <td>378.99 x 100</td>
+                                                        <td>505.94</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>AMZN <span class="co-name">Amazon.com Inc.</span></th>
+                                                        <td>191.55</td>
+                                                        <td>12:23PM</td>
+                                                        <td>3.16 (1.68%)</td>
+                                                        <td>188.39</td>
+                                                        <td>194.99</td>
+                                                        <td>191.52 x 300</td>
+                                                        <td>191.58 x 100</td>
+                                                        <td>240.32</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>ORCL <span class="co-name">Oracle Corporation</span></th>
+                                                        <td>31.15</td>
+                                                        <td>12:44PM</td>
+                                                        <td>1.41 (4.72%)</td>
+                                                        <td>29.74</td>
+                                                        <td>30.67</td>
+                                                        <td>31.14 x 6500</td>
+                                                        <td>31.15 x 3200</td>
+                                                        <td>36.11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>MSFT <span class="co-name">Microsoft Corporation</span></th>
+                                                        <td>25.50</td>
+                                                        <td>12:27PM</td>
+                                                        <td>0.66 (2.67%)</td>
+                                                        <td>24.84</td>
+                                                        <td>25.37</td>
+                                                        <td>25.50 x 71100</td>
+                                                        <td>25.51 x 17800</td>
+                                                        <td>31.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>CSCO <span class="co-name">Cisco Systems, Inc.</span></th>
+                                                        <td>18.65</td>
+                                                        <td>12:45PM</td>
+                                                        <td>0.97 (5.49%)</td>
+                                                        <td>17.68</td>
+                                                        <td>18.23</td>
+                                                        <td>18.65 x 10300</td>
+                                                        <td>18.66 x 24000</td>
+                                                        <td>21.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>YHOO <span class="co-name">Yahoo! Inc.</span></th>
+                                                        <td>15.81</td>
+                                                        <td>12:25PM</td>
+                                                        <td>0.11 (0.67%)</td>
+                                                        <td>15.70</td>
+                                                        <td>15.94</td>
+                                                        <td>15.79 x 6100</td>
+                                                        <td>15.80 x 17000</td>
+                                                        <td>18.16</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <div class="external-event fc-event bg-info" data-class="bg-info">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Meeting
-                                            </div>
-                                            <div class="external-event fc-event bg-warning" data-class="bg-warning">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Generating
-                                                Reports
-                                            </div>
-                                            <div class="external-event fc-event bg-danger" data-class="bg-danger">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Create
-                                                New theme
-                                            </div>
+        
                                         </div>
-                                        
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
-                            <div class="col-xl-9">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <div id="calendar"></div>
+        
                                     </div>
                                 </div>
                             </div> <!-- end col -->
-                        </div> <!-- end row-->
-                        <div style='clear:both'></div>
-            
-                        <!-- Add New Event MODAL -->
-                        <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header py-3 px-4">
-                                        <h5 class="modal-title" id="modal-title">Event</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-            
-                                    <div class="modal-body p-4">
-                                        <form class="needs-validation" name="event-form" id="form-event" novalidate>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Event Name</label>
-                                                        <input class="form-control" placeholder="Insert Event Name" type="text"
-                                                            name="title" id="event-title" required value="">
-                                                        <div class="invalid-feedback">Please provide a valid event name
-                                                        </div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Category</label>
-                                                        <select class="form-select" name="category" id="event-category">
-                                                            <option  selected> --Select-- </option>
-                                                            <option value="bg-danger">Danger</option>
-                                                            <option value="bg-success">Success</option>
-                                                            <option value="bg-primary">Primary</option>
-                                                            <option value="bg-info">Info</option>
-                                                            <option value="bg-dark">Dark</option>
-                                                            <option value="bg-warning">Warning</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a valid event
-                                                            category</div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                            <div class="row mt-2">
-                                                <div class="col-6">
-                                                    <button type="button" class="btn btn-danger"
-                                                        id="btn-delete-event">Delete</button>
-                                                </div> <!-- end col-->
-                                                <div class="col-6 text-end">
-                                                    <button type="button" class="btn btn-light me-1"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                        </form>
-                                    </div>
-                                </div>
-                                <!-- end modal-content-->
-                            </div>
-                            <!-- end modal dialog-->
-                        </div>
-                        <!-- end modal-->
-                        
+                        </div> <!-- end row -->
+
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
@@ -885,17 +1206,11 @@
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- plugin js -->
-        <script src="assets/libs/moment/min/moment.min.js"></script>
-        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-        <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
+        <!-- Responsive Table js -->
+        <script src="assets/libs/admin-resources/rwd-table/rwd-table.min.js"></script>
 
-        <!-- Calendar init -->
-        <script src="assets/js/pages/calendar.init.js"></script>
+        <!-- Init js -->
+        <script src="assets/js/pages/table-responsive.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 

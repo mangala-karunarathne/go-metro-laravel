@@ -4,19 +4,13 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Calendar | Upcube - Admin & Dashboard Template</title>
+        <title>Progress Bars | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- Plugin css -->
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/core/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css">
-    
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -441,7 +435,7 @@
                             <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="mt-3">
-                            <h4 class="font-size-16 mb-1">Anne Mery</h4>
+                            <h4 class="font-size-16 mb-1">Julia Hudda</h4>
                             <span class="text-muted"><i class="ri-record-circle-line align-middle font-size-14 text-success"></i> Online</span>
                         </div>
                     </div>
@@ -686,12 +680,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Calendar</h4>
+                                    <h4 class="mb-sm-0">Progress Bars</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
-                                            <li class="breadcrumb-item active">Calendar</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
+                                            <li class="breadcrumb-item active">Progress Bars</li>
                                         </ol>
                                     </div>
 
@@ -699,107 +693,197 @@
                             </div>
                         </div>
                         <!-- end page title -->
-                        
-                        <div class="row mb-4">
-                            <div class="col-xl-3">
-                                <div class="card h-100">
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
                                     <div class="card-body">
-                                        <button type="button" class="btn font-16 btn-primary waves-effect waves-light w-100"
-                                            id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal">
-                                            Create New Event
-                                        </button>
-            
-                                        <div id="external-events">
-                                            <br>
-                                            <p class="text-muted">Drag and drop your event or click in the calendar</p>
-                                            <div class="external-event fc-event bg-success" data-class="bg-success">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>New Event
-                                                Planning
+        
+                                        <h4 class="card-title">Default Examples</h4>
+                                        <p class="card-title-desc">Progress components are built with two
+                                            HTML elements, some CSS to set the width, and a few attributes.</p>
+        
+                                        <div class="">
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <div class="external-event fc-event bg-info" data-class="bg-info">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Meeting
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <div class="external-event fc-event bg-warning" data-class="bg-warning">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Generating
-                                                Reports
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
-                                            <div class="external-event fc-event bg-danger" data-class="bg-danger">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Create
-                                                New theme
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                             </div>
                                         </div>
-                                        
                                     </div>
                                 </div>
-                            </div> <!-- end col-->
-                            <div class="col-xl-9">
-                                <div class="card mb-0">
+                            </div>
+        
+                            <div class="col-xl-6">
+                                <div class="card">
                                     <div class="card-body">
-                                        <div id="calendar"></div>
+        
+                                        <h4 class="card-title">Backgrounds</h4>
+                                        <p class="card-title-desc">Use background utility classes to
+                                            change the appearance of individual progress bars.</p>
+        
+                                        <div class="">
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Labels Example</h4>
+                                        <p class="card-title-desc">Add labels to your progress bars by placing text within the <code class="highlighter-rouge">.progress-bar</code>.</p>
+        
+                                        <div class="">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Multiple bars</h4>
+                                        <p class="card-title-desc">Include multiple progress bars in a progress component if you need.</p>
+        
+                                        <div class="">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Height</h4>
+                                        <p class="card-title-desc">We only set a <code
+                                                class="highlighter-rouge">height</code> value on the <code
+                                                class="highlighter-rouge">.progress-bar</code>, so if you change
+                                            that value the outer <code class="highlighter-rouge">.progress</code>
+                                            will automatically resize accordingly.</p>
+        
+                                        <div class="">
+                                            <div class="progress mb-3" style="height: 3px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress" style="height: 20px;">
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div> <!-- end col -->
-                        </div> <!-- end row-->
-                        <div style='clear:both'></div>
-            
-                        <!-- Add New Event MODAL -->
-                        <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header py-3 px-4">
-                                        <h5 class="modal-title" id="modal-title">Event</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-            
-                                    <div class="modal-body p-4">
-                                        <form class="needs-validation" name="event-form" id="form-event" novalidate>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Event Name</label>
-                                                        <input class="form-control" placeholder="Insert Event Name" type="text"
-                                                            name="title" id="event-title" required value="">
-                                                        <div class="invalid-feedback">Please provide a valid event name
-                                                        </div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Category</label>
-                                                        <select class="form-select" name="category" id="event-category">
-                                                            <option  selected> --Select-- </option>
-                                                            <option value="bg-danger">Danger</option>
-                                                            <option value="bg-success">Success</option>
-                                                            <option value="bg-primary">Primary</option>
-                                                            <option value="bg-info">Info</option>
-                                                            <option value="bg-dark">Dark</option>
-                                                            <option value="bg-warning">Warning</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a valid event
-                                                            category</div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                            <div class="row mt-2">
-                                                <div class="col-6">
-                                                    <button type="button" class="btn btn-danger"
-                                                        id="btn-delete-event">Delete</button>
-                                                </div> <!-- end col-->
-                                                <div class="col-6 text-end">
-                                                    <button type="button" class="btn btn-light me-1"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                        </form>
+        
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Animated stripes</h4>
+                                        <p class="card-title-desc">The striped gradient can also be
+                                            animated. Add <code
+                                                    class="highlighter-rouge">.progress-bar-animated</code> to <code
+                                                    class="highlighter-rouge">.progress-bar</code> to animate the
+                                            stripes right to left via CSS3 animations.</p>
+        
+                                        <div class="">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- end modal-content-->
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+        
+        
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Striped</h4>
+                                        <p class="card-title-desc">Add <code class="highlighter-rouge">.progress-bar-striped</code>
+                                            to any <code class="highlighter-rouge">.progress-bar</code> to apply a
+                                            stripe via CSS gradient over the progress bar’s background color.</p>
+        
+                                        <div class="">
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- end modal dialog-->
-                        </div>
-                        <!-- end modal-->
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Animated Progress</h4>
+                                        <p class="card-title-desc">Add <code class="highlighter-rounge">.animated-progess</code> class with <code class="highlighter-rounge">.progress-bar</code> for animated progressbar.</p>
+
+                                        <div class="">
+                                            <div class="progress animated-progess mb-4">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress animated-progess mb-4">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress animated-progess mb-4">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="progress animated-progess">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end row-->
                         
                     </div> <!-- container-fluid -->
                 </div>
@@ -884,18 +968,6 @@
         <script src="assets/libs/metismenu/metisMenu.min.js"></script>
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
-
-        <!-- plugin js -->
-        <script src="assets/libs/moment/min/moment.min.js"></script>
-        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-        <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
-
-        <!-- Calendar init -->
-        <script src="assets/js/pages/calendar.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 

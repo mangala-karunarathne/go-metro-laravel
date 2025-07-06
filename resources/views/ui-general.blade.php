@@ -4,19 +4,13 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Calendar | Upcube - Admin & Dashboard Template</title>
+        <title>General | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- Plugin css -->
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/core/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css">
-    
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -441,7 +435,7 @@
                             <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="mt-3">
-                            <h4 class="font-size-16 mb-1">Anne Mery</h4>
+                            <h4 class="font-size-16 mb-1">Julia Hudda</h4>
                             <span class="text-muted"><i class="ri-record-circle-line align-middle font-size-14 text-success"></i> Online</span>
                         </div>
                     </div>
@@ -686,12 +680,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Calendar</h4>
+                                    <h4 class="mb-sm-0">General</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
-                                            <li class="breadcrumb-item active">Calendar</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
+                                            <li class="breadcrumb-item active">General</li>
                                         </ol>
                                     </div>
 
@@ -699,108 +693,415 @@
                             </div>
                         </div>
                         <!-- end page title -->
-                        
-                        <div class="row mb-4">
-                            <div class="col-xl-3">
-                                <div class="card h-100">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
                                     <div class="card-body">
-                                        <button type="button" class="btn font-16 btn-primary waves-effect waves-light w-100"
-                                            id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal">
-                                            Create New Event
-                                        </button>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div>
+                                                    <h4 class="card-title">Badges</h4>
+                                                    <p class="card-title-desc">Add any of the below mentioned modifier classes to change the appearance of a badge.</p>
+                                                    <div>
+                                                        <span class="badge bg-primary">Primary</span>
+                                                        <span class="badge bg-success">Success</span>
+                                                        <span class="badge bg-info">Info</span>
+                                                        <span class="badge bg-warning">Warning</span>
+                                                        <span class="badge bg-danger">Danger</span>
+                                                        <span class="badge bg-dark">Dark</span>
+                                                    </div>
+
+                                                    <div class="mt-1">
+                                                        <span class="badge badge-soft-primary">Primary</span>
+                                                        <span class="badge badge-soft-success">Success</span>
+                                                        <span class="badge badge-soft-info">Info</span>
+                                                        <span class="badge badge-soft-warning">Warning</span>
+                                                        <span class="badge badge-soft-danger">Danger</span>
+                                                        <span class="badge badge-soft-dark">Dark</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="mt-4 mt-lg-0">
+                                                    <h4 class="card-title">Pill badges</h4>
+                                                    <p class="card-title-desc">Use the <code>.rounded-pill</code> modifier class to make
+                                                    badges more rounded (with a larger <code>border-radius</code>
+                                                    and additional horizontal <code>padding</code>).
+                                                    Useful if you miss the badges from v3.</p>
+        
+                                                    <div>
+                                                        <span class="badge rounded-pill bg-primary">Primary</span>
+                                                        <span class="badge rounded-pill bg-success">Success</span>
+                                                        <span class="badge rounded-pill bg-info">Info</span>
+                                                        <span class="badge rounded-pill bg-warning">Warning</span>
+                                                        <span class="badge rounded-pill bg-danger">Danger</span>
+                                                        <span class="badge rounded-pill bg-dark">Dark</span>
+                                                    </div>
+
+                                                    <div class="mt-1">
+                                                        <span class="badge rounded-pill badge-soft-primary">Primary</span>
+                                                        <span class="badge rounded-pill badge-soft-success">Success</span>
+                                                        <span class="badge rounded-pill badge-soft-info">Info</span>
+                                                        <span class="badge rounded-pill badge-soft-warning">Warning</span>
+                                                        <span class="badge rounded-pill badge-soft-danger">Danger</span>
+                                                        <span class="badge rounded-pill badge-soft-dark">Dark</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Popovers</h4>
+                                        <p class="card-title-desc">Four options are available: top, right, bottom, and left aligned. Directions are mirrored when using Bootstrap in RTL.</p>
+
+                                        <div class="button-items">
+
+                                            <button type="button" class="btn btn-light waves-effect" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                                Popover on top
+                                            </button>
             
-                                        <div id="external-events">
-                                            <br>
-                                            <p class="text-muted">Drag and drop your event or click in the calendar</p>
-                                            <div class="external-event fc-event bg-success" data-class="bg-success">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>New Event
-                                                Planning
-                                            </div>
-                                            <div class="external-event fc-event bg-info" data-class="bg-info">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Meeting
-                                            </div>
-                                            <div class="external-event fc-event bg-warning" data-class="bg-warning">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Generating
-                                                Reports
-                                            </div>
-                                            <div class="external-event fc-event bg-danger" data-class="bg-danger">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Create
-                                                New theme
-                                            </div>
+                                            <button type="button" class="btn btn-light waves-effect" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                                Popover on right
+                                            </button>
+            
+                                            <button type="button" class="btn btn-light waves-effect" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                                Popover on bottom
+                                            </button>
+            
+                                            <button type="button" class="btn btn-light waves-effect" data-bs-toggle="popover" data-bs-placement="left" title="Popover Title" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                                Popover on left
+                                            </button>
+            
+                                            <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</button>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Tooltips</h4>
+                                        <p class="card-title-desc">Hover over the links below to see tooltips:</p>
+        
+                                        <div class="button-items">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                                Tooltip on top
+                                            </button>
+            
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+                                                Tooltip on right
+                                            </button>
+            
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+                                                Tooltip on bottom
+                                            </button>
+            
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                                                Tooltip on left
+                                            </button>
+
                                         </div>
                                         
                                     </div>
                                 </div>
-                            </div> <!-- end col-->
-                            <div class="col-xl-9">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <div id="calendar"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- end col -->
-                        </div> <!-- end row-->
-                        <div style='clear:both'></div>
-            
-                        <!-- Add New Event MODAL -->
-                        <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header py-3 px-4">
-                                        <h5 class="modal-title" id="modal-title">Event</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-            
-                                    <div class="modal-body p-4">
-                                        <form class="needs-validation" name="event-form" id="form-event" novalidate>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Event Name</label>
-                                                        <input class="form-control" placeholder="Insert Event Name" type="text"
-                                                            name="title" id="event-title" required value="">
-                                                        <div class="invalid-feedback">Please provide a valid event name
-                                                        </div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Category</label>
-                                                        <select class="form-select" name="category" id="event-category">
-                                                            <option  selected> --Select-- </option>
-                                                            <option value="bg-danger">Danger</option>
-                                                            <option value="bg-success">Success</option>
-                                                            <option value="bg-primary">Primary</option>
-                                                            <option value="bg-info">Info</option>
-                                                            <option value="bg-dark">Dark</option>
-                                                            <option value="bg-warning">Warning</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a valid event
-                                                            category</div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                            <div class="row mt-2">
-                                                <div class="col-6">
-                                                    <button type="button" class="btn btn-danger"
-                                                        id="btn-delete-event">Delete</button>
-                                                </div> <!-- end col-->
-                                                <div class="col-6 text-end">
-                                                    <button type="button" class="btn btn-light me-1"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                        </form>
-                                    </div>
-                                </div>
-                                <!-- end modal-content-->
+        
                             </div>
-                            <!-- end modal dialog-->
                         </div>
-                        <!-- end modal-->
-                        
+                        <!-- end row -->
+        
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-4">Pagination</h4>
+        
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <h5 class="font-size-14">Default Example</h5>
+                                                <p class="card-title-desc">Pagination links indicate a series of related content exists across multiple pages.</p>
+        
+                                                <nav aria-label="Page navigation example">
+                                                    <ul class="pagination">
+                                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                    </ul>
+                                                </nav>
+                
+                                                <nav aria-label="Page navigation example">
+                                                    <ul class="pagination">
+                                                        <li class="page-item">
+                                                          <a class="page-link" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                          </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                          <a class="page-link" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                          </a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+            
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="mt-4 mt-lg-0">
+                                                    <h5 class="font-size-14">Disabled and active states</h5>
+                                                    <p class="card-title-desc">Pagination links are customizable for
+                                                            different circumstances. Use <code>.disabled</code> for links that appear
+                                                            un-clickable and <code>.active</code> to
+                                                            indicate the current page.</p>
+                
+            
+                                                    <nav aria-label="...">
+                                                        <ul class="pagination">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item active">
+                                                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+
+                                                        
+                                                    </nav>
+                    
+                                                    <nav aria-label="...">
+                                                        <ul class="pagination">
+                                                            <li class="page-item disabled">
+                                                              <a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item active"><a class="page-link" href="#">2 <span class="sr-only">(current)</span></a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item">
+                                                              <a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+        
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="mt-4">
+                                                    <h5 class="font-size-14">Sizing</h5>
+                                                    <p class="card-title-desc">Fancy larger or smaller pagination? Add <code>.pagination-lg</code> or <code>.pagination-sm</code> for additional
+                                                            sizes.</p>
+                
+                                                    <nav aria-label="...">
+                                                        <ul class="pagination pagination-lg">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                    
+                                                    <nav aria-label="...">
+                                                        <ul class="pagination pagination-sm">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                    
+                                            </div>
+        
+                                            <div class="col-lg-6">
+                                                <div class="mt-4">
+                                                    <h5 class="card-title">Alignment</h5>
+                                                    <p class="card-title-desc">Change the alignment of pagination
+                                                            components with flexbox utilities.</p>
+                
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination justify-content-center">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                    
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination justify-content-end">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+
+                                        <div class="row  mt-4">
+                                            <div class="col-lg-6">
+                                                <h5 class="font-size-14">Rounded Example</h5>
+                                                <p class="card-title-desc">Add <code>.pagination-rounded</code> for rounded pagination.</p>
+        
+                                                <nav aria-label="...">
+                                                    <ul class="pagination pagination-rounded">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active">
+                                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                
+                                                <nav aria-label="...">
+                                                    <ul class="pagination pagination-rounded">
+                                                        <li class="page-item disabled">
+                                                            <span class="page-link"><i class="mdi mdi-chevron-left"></i></span>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active">
+                                                            <span class="page-link">
+                                                                2
+                                                                <span class="sr-only">(current)</span>
+                                                            </span>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#"><i class="mdi mdi-chevron-right"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div><!-- end col-->
+                                        </div>
+                                        <!-- end row -->
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                        <!-- end row -->
+        
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Border spinner</h4>
+                                        <p class="card-title-desc">Use the border spinners for a lightweight loading indicator.</p>
+                                        <div>
+                                            <div class="spinner-border text-primary m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-secondary m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-success m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-info m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-warning m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-danger m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-border text-dark m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Growing spinner</h4>
+                                        <p class="card-title-desc">If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!</p>
+                                        <div>
+                                            <div class="spinner-grow text-primary m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-secondary m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-success m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-info m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-warning m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-danger m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <div class="spinner-grow text-dark m-1" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
@@ -884,18 +1185,6 @@
         <script src="assets/libs/metismenu/metisMenu.min.js"></script>
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
-
-        <!-- plugin js -->
-        <script src="assets/libs/moment/min/moment.min.js"></script>
-        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-        <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
-
-        <!-- Calendar init -->
-        <script src="assets/js/pages/calendar.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 

@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Inbox | Upcube - Admin & Dashboard Template</title>
+        <title>Tabs & Accordions | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
@@ -680,12 +680,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Inbox</h4>
+                                    <h4 class="mb-sm-0">Tabs & Accordions</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Email</a></li>
-                                            <li class="breadcrumb-item active">Inbox</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
+                                            <li class="breadcrumb-item active">Tabs & Accordions</li>
                                         </ol>
                                     </div>
 
@@ -695,448 +695,474 @@
                         <!-- end page title -->
                         
                         <div class="row">
-                            <div class="col-12">
-                                <!-- Left sidebar -->
-                                <div class="email-leftbar card">
-                                    <div class="d-grid">
-                                        <button type="button" class="btn btn-danger waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
-                                            Compose
-                                        </button>
-                                    </div>
-                                    <div class="mail-list mt-4">
-                                        <a href="#" class="active"><i class="mdi mdi-email-outline me-2"></i> Inbox <span class="ms-1 float-end">(18)</span></a>
-                                        <a href="#"><i class="mdi mdi-star-outline me-2"></i>Starred</a>
-                                        <a href="#"><i class="mdi mdi-diamond-stone me-2"></i>Important</a>
-                                        <a href="#"><i class="mdi mdi-file-outline me-2"></i>Draft</a>
-                                        <a href="#"><i class="mdi mdi-email-check-outline me-2"></i>Sent Mail</a>
-                                        <a href="#"><i class="mdi mdi-trash-can-outline me-2"></i>Trash</a>
-                                    </div>
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
         
+                                        <h4 class="card-title">Default Tabs</h4>
+                                        <p class="card-title-desc">Use the tab JavaScript plugin—include
+                                            it individually or through the compiled <code class="highlighter-rouge">bootstrap.js</code>
+                                            file—to extend our navigational tabs and pills to create tabbable panes
+                                            of local content, even via dropdown menus.</p>
         
-                                    <h6 class="mt-4">Labels</h6>
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#home" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                                    <span class="d-none d-sm-block">Home</span>    
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#profile" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                                    <span class="d-none d-sm-block">Profile</span>    
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#messages" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                                    <span class="d-none d-sm-block">Messages</span>    
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#settings" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                                    <span class="d-none d-sm-block">Settings</span>    
+                                                </a>
+                                            </li>
+                                        </ul>
         
-                                    <div class="mail-list mt-1">
-                                        <a href="#"><span class="mdi mdi-circle-outline text-info float-end"></span>Theme Support</a>
-                                        <a href="#"><span class="mdi mdi-circle-outline text-warning float-end"></span>Freelance</a>
-                                        <a href="#"><span class="mdi mdi-circle-outline text-primary float-end"></span>Social</a>
-                                        <a href="#"><span class="mdi mdi-circle-outline text-danger float-end"></span>Friends</a>
-                                        <a href="#"><span class="mdi mdi-circle-outline text-success float-end"></span>Family</a>
-                                    </div>
-        
-                                    <h6 class="mt-4">Chat</h6>
-        
-                                    <div class="mt-2">
-                                        <a href="#" class="d-flex">
-                                            <img class="d-flex me-3 rounded-circle" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image" height="36">
-                                            <div class="flex-1 chat-user-box overflow-hidden">
-                                                <p class="user-title m-0">Scott Median</p>
-                                                <p class="text-muted text-truncate">Hello</p>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content p-3 text-muted">
+                                            <div class="tab-pane active" id="home" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Raw denim you probably haven't heard of them jean shorts Austin.
+                                                    Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache
+                                                    cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                    butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi,
+                                                    qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+                                                    iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                    voluptate nisi qui.
+                                                </p>
                                             </div>
-                                        </a>
-        
-                                        <a href="#" class="d-flex">
-                                            <img class="d-flex me-3 rounded-circle" src="assets/images/users/avatar-3.jpg" alt="Generic placeholder image" height="36">
-                                            <div class="flex-1 chat-user-box overflow-hidden">
-                                                <p class="user-title m-0">Julian Rosa</p>
-                                                <p class="text-muted text-truncate">What about our next..</p>
+                                            <div class="tab-pane" id="profile" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                                    single-origin coffee squid. Exercitation +1 labore velit, blog
+                                                    sartorial PBR leggings next level wes anderson artisan four loko
+                                                    farm-to-table craft beer twee. Qui photo booth letterpress,
+                                                    commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+                                                    vinyl cillum PBR. Homo nostrud organic, assumenda labore
+                                                    aesthetic magna delectus.
+                                                </p>
                                             </div>
-                                        </a>
-        
-                                        <a href="#" class="d-flex">
-                                            <img class="d-flex me-3 rounded-circle" src="assets/images/users/avatar-4.jpg" alt="Generic placeholder image" height="36">
-                                            <div class="flex-1 chat-user-box overflow-hidden">
-                                                <p class="user-title m-0">David Medina</p>
-                                                <p class="text-muted text-truncate">Yeah everything is fine</p>
+                                            <div class="tab-pane" id="messages" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                                                    sold out mcsweeney's organic lomo retro fanny pack lo-fi
+                                                    farm-to-table readymade. Messenger bag gentrify pitchfork
+                                                    tattooed craft beer, iphone skateboard locavore carles etsy
+                                                    salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                                    Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh
+                                                    mi whatever gluten yr.
+                                                </p>
                                             </div>
-                                        </a>
-        
-                                        <a href="#" class="d-flex">
-                                            <img class="d-flex me-3 rounded-circle" src="assets/images/users/avatar-6.jpg" alt="Generic placeholder image" height="36">
-                                            <div class="flex-1 chat-user-box overflow-hidden">
-                                                <p class="user-title m-0">Jay Baker</p>
-                                                <p class="text-muted text-truncate">Wow that's great</p>
+                                            <div class="tab-pane" id="settings" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                                    art party before they sold out master cleanse gluten-free squid
+                                                    scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                                    art party locavore wolf cliche high life echo park Austin. Cred
+                                                    vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                    farm-to-table VHS.
+                                                </p>
                                             </div>
-                                        </a>
+                                        </div>
         
                                     </div>
                                 </div>
-                                <!-- End Left sidebar -->
+                            </div>
         
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
         
-                                <!-- Right Sidebar -->
-                                <div class="email-rightbar mb-3">
-                                    
-                                    <div class="card">
-                                        <div class="btn-toolbar p-3" role="toolbar">
-                                            <div class="btn-group me-2 mb-2 mb-sm-0">
-                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-inbox"></i></button>
-                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-exclamation-circle"></i></button>
-                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="far fa-trash-alt"></i></button>
-                                            </div>
-                                            <div class="btn-group me-2 mb-2 mb-sm-0">
-                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa fa-folder"></i> <i class="mdi mdi-chevron-down ms-1"></i>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Updates</a>
-                                                    <a class="dropdown-item" href="#">Social</a>
-                                                    <a class="dropdown-item" href="#">Team Manage</a>
-                                                </div>
-                                            </div>
-                                            <div class="btn-group me-2 mb-2 mb-sm-0">
-                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa fa-tag"></i> <i class="mdi mdi-chevron-down ms-1"></i>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Updates</a>
-                                                    <a class="dropdown-item" href="#">Social</a>
-                                                    <a class="dropdown-item" href="#">Team Manage</a>
-                                                </div>
-                                            </div>
-            
-                                            <div class="btn-group me-2 mb-2 mb-sm-0">
-                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    More <i class="mdi mdi-dots-vertical ms-2"></i>
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Mark as Unread</a>
-                                                    <a class="dropdown-item" href="#">Mark as Important</a>
-                                                    <a class="dropdown-item" href="#">Add to Tasks</a>
-                                                    <a class="dropdown-item" href="#">Add Star</a>
-                                                    <a class="dropdown-item" href="#">Mute</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <ul class="message-list">
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk19">
-                                                        <label class="form-label" for="chk19" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Peter, me (3)</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Hello – <span class="teaser">Trip home from Colombo has been arranged, then Jenna will come get me from Stockholm. :)</span>
-                                                    </a>
-                                                    <div class="date">Mar 6</div>
-                                                </div>
-                                            </li>
-                
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk20">
-                                                        <label class="form-label" for="chk20" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">me, Susanna (7)</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject"><span class="bg-warning badge me-2">Freelance</span>Since you asked... and i'm
-                                                        inconceivably bored at the train station –
-                                                        <span class="teaser">Alright thanks. I'll have to re-book that somehow, i'll get back to you.</span>
-                                                    </a>
-                                                    <div class="date">Mar. 6</div>
-                                                </div>
-                                            </li>
+                                        <h4 class="card-title">Justify Tabs</h4>
+                                        <p class="card-title-desc">Use the tab JavaScript plugin—include
+                                            it individually or through the compiled <code class="highlighter-rouge">bootstrap.js</code>
+                                            file—to extend our navigational tabs and pills to create tabbable panes
+                                            of local content, even via dropdown menus.</p>
         
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk6">
-                                                        <label class="form-label" for="chk6" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Web Support Dennis</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Re: New mail settings – 
-                                                        <span class="teaser">Will you answer him asap?</span>
-                                                    </a>
-                                                    <div class="date">Mar 7</div>
-                                                </div>
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-pills nav-justified" role="tablist">
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#home-1" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                                    <span class="d-none d-sm-block">Home</span> 
+                                                </a>
                                             </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk7">
-                                                        <label class="form-label" for="chk7" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">me, Peter (2)</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject"><span class="bg-info badge me-2">Support</span>Off on Thursday - 
-                                                        <span class="teaser">Eff that place, you might as well stay here with us instead! Sent from my iPhone 4  4 mar 2014 at 5:55 pm</span>
-                                                    </a>
-                                                    <div class="date">Mar 4</div>
-                                                </div>
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#profile-1" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                                    <span class="d-none d-sm-block">Profile</span> 
+                                                </a>
                                             </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk8">
-                                                        <label class="form-label" for="chk8" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Medium</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject"><span class="bg-primary badge me-2">Social</span>This Week's Top Stories – 
-                                                        <span class="teaser">Our top pick for you on Medium this week The Man Who Destroyed America’s Ego</span>
-                                                    </a>
-                                                    <div class="date">Feb 28</div>
-                                                </div>
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#messages-1" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                                    <span class="d-none d-sm-block">Messages</span>   
+                                                </a>
                                             </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk9">
-                                                        <label class="form-label" for="chk9" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Death to Stock</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Montly High-Res Photos – 
-                                                        <span class="teaser">To create this month's pack, we hosted a party with local musician Jared Mahone here in Columbus, Ohio.</span>
-                                                    </a>
-                                                    <div class="date">Feb 28</div>
-                                                </div>
+                                            <li class="nav-item waves-effect waves-light">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#settings-1" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                                    <span class="d-none d-sm-block">Settings</span>    
+                                                </a>
                                             </li>
-        
-                                            <li class="unread">
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk3">
-                                                        <label class="form-label" for="chk3" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Randy, me (5)</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject"><span class="bg-success badge me-2">Family</span>Last pic over my village – 
-                                                        <span class="teaser">Yeah i'd like that! Do you remember the video you showed me of your train ride between Colombo and Kandy? The one with the mountain view? I would love to see that one again!</span>
-                                                    </a>
-                                                    <div class="date">5:01 am</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk4">
-                                                        <label class="form-label" for="chk4" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Andrew Zimmer</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Mochila Beta: Subscription Confirmed
-                                                        – <span class="teaser">You've been confirmed! Welcome to the ruling class of the inbox. For your records, here is a copy of the information you submitted to us...</span>
-                                                    </a>
-                                                    <div class="date">Mar 8</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk5">
-                                                        <label class="form-label" for="chk5" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Infinity HR</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Sveriges Hetaste sommarjobb –
-                                                        <span class="teaser">Hej Nicklas Sandell! Vi vill bjuda in dig till "First tour 2014", ett rekryteringsevent som erbjuder jobb på 16 semesterorter iSverige.</span>
-                                                    </a>
-                                                    <div class="date">Mar 8</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk10">
-                                                        <label class="form-label" for="chk10" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Revibe</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject"><span class="bg-danger badge me-2">Friends</span>Weekend on Revibe – 
-                                                        <span class="teaser">Today's Friday and we thought maybe you want some music inspiration for the weekend. Here are some trending tracks and playlists we think you should give a listen!</span>
-                                                    </a>
-                                                    <div class="date">Feb 27</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk11">
-                                                        <label class="form-label" for="chk11" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Erik, me (5)</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Regarding our meeting – 
-                                                        <span class="teaser">That's great, see you on Thursday!</span>
-                                                    </a>
-                                                    <div class="date">Feb 24</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk12">
-                                                        <label class="form-label" for="chk12" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">KanbanFlow</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject"><span class="bg-primary badge me-2">Social</span>Task assigned: Clone ARP's website
-                                                        – <span class="teaser">You have been assigned a task by Alex@Work on the board Web.</span>
-                                                    </a>
-                                                    <div class="date">Feb 24</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk13">
-                                                        <label class="form-label" for="chk13" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Tobias Berggren</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Let's go fishing! – 
-                                                        <span class="teaser">Hey, You wanna join me and Fred at the lake tomorrow? It'll be awesome.</span>
-                                                    </a>
-                                                    <div class="date">Feb 23</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk14">
-                                                        <label class="form-label" for="chk14" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Charukaw, me (7)</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Hey man – <span class="teaser">Nah man sorry i don't. Should i get it?</span>
-                                                    </a>
-                                                    <div class="date">Feb 23</div>
-                                                </div>
-                                            </li>
-                                            <li class="unread">
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk15">
-                                                        <label class="form-label" for="chk15" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">me, Peter (5)</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject"><span class="bg-info badge me-2">Support</span>Home again! – <span class="teaser">That's just perfect! See you tomorrow.</span>
-                                                    </a>
-                                                    <div class="date">Feb 21</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk16">
-                                                        <label class="form-label" for="chk16" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Stack Exchange</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">1 new items in your Stackexchange inbox
-                                                        – <span class="teaser">The following items were added to your Stack Exchange global inbox since you last checked it.</span>
-                                                    </a>
-                                                    <div class="date">Feb 21</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk17">
-                                                        <label class="form-label" for="chk17" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">Google Drive Team</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">You can now use your storage in Google
-                                                        Drive – <span class="teaser">Hey Nicklas Sandell! Thank you for purchasing extra storage space in Google Drive.</span>
-                                                    </a>
-                                                    <div class="date">Feb 20</div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="col-mail col-mail-1">
-                                                    <div class="checkbox-wrapper-mail">
-                                                        <input type="checkbox" id="chk18">
-                                                        <label class="form-label" for="chk18" class="toggle"></label>
-                                                    </div>
-                                                    <a href="#" class="title">me, Susanna (11)</a><span class="star-toggle far fa-star"></span>
-                                                </div>
-                                                <div class="col-mail col-mail-2">
-                                                    <a href="#" class="subject">Train/Bus – <span class="teaser">Yes ok, great! I'm not stuck in Stockholm anymore, we're making progress.</span>
-                                                    </a>
-                                                    <div class="date">Feb 19</div>
-                                                </div>
-                                            </li>
-        
                                         </ul>
         
-                                    </div> <!-- card -->
-        
-                                    <div class="row">
-                                        <div class="col-7">
-                                            Showing 1 - 20 of 1,524
+                                        <!-- Tab panes -->
+                                        <div class="tab-content p-3 text-muted">
+                                            <div class="tab-pane active" id="home-1" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Raw denim you probably haven't heard of them jean shorts Austin.
+                                                    Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache
+                                                    cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                    butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi,
+                                                    qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+                                                    iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                    voluptate nisi qui.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane" id="profile-1" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                                    single-origin coffee squid. Exercitation +1 labore velit, blog
+                                                    sartorial PBR leggings next level wes anderson artisan four loko
+                                                    farm-to-table craft beer twee. Qui photo booth letterpress,
+                                                    commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+                                                    vinyl cillum PBR. Homo nostrud organic, assumenda labore
+                                                    aesthetic magna 8-bit.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane" id="messages-1" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                                                    sold out mcsweeney's organic lomo retro fanny pack lo-fi
+                                                    farm-to-table readymade. Messenger bag gentrify pitchfork
+                                                    tattooed craft beer, iphone skateboard locavore carles etsy
+                                                    salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                                    Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh
+                                                    mi whatever gluten-free.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane" id="settings-1" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                                    art party before they sold out master cleanse gluten-free squid
+                                                    scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                                    art party locavore wolf cliche high life echo park Austin. Cred
+                                                    vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                    farm-to-table.
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="col-5">
-                                            <div class="btn-group float-end">
-                                                <button type="button" class="btn btn-sm btn-success waves-effect"><i class="fa fa-chevron-left"></i></button>
-                                                <button type="button" class="btn btn-sm btn-success waves-effect"><i class="fa fa-chevron-right"></i></button>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                        <div class="row">
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Vertical Nav Tabs</h4>
+                                        <p class="card-title-desc">Example of Vertical nav tabs</p>
+
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                <a class="nav-link mb-2 active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                                                <a class="nav-link mb-2" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                                                <a class="nav-link mb-2" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                                                <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="tab-content text-muted mt-4 mt-md-0" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                        <p>
+                                                            Raw denim you probably haven't heard of them jean shorts Austin.
+                                                            Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache
+                                                            cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                            butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi,
+                                                            qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+                                                            iphone. Seitan aliquip quis cardigan.
+                                                        </p>
+                                                        <p>Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi,
+                                                                qui irure terry richardson ex squid.</p>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                        <p>
+                                                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                                            single-origin coffee squid. Exercitation +1 labore velit, blog
+                                                            sartorial PBR leggings next level wes anderson artisan four loko
+                                                            farm-to-table craft beer twee. Qui photo booth letterpress,
+                                                            commodo enim craft beer mlkshk.
+                                                        </p>
+                                                        <p class="mb-0"> Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna 8-bit</p>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                        <p>
+                                                            Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                                                            sold out mcsweeney's organic lomo retro fanny pack lo-fi
+                                                            farm-to-table readymade. Messenger bag gentrify pitchfork
+                                                            tattooed craft beer, iphone skateboard locavore carles etsy
+                                                            salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                                            Leggings gentrify squid 8-bit cred.
+                                                        </p>
+                                                        <p class="mb-0">DIY synth PBR banksy irony.
+                                                                Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh
+                                                                mi whatever gluten-free.</p>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <p>
+                                                            Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                                            art party before they sold out master cleanse gluten-free squid
+                                                            scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                                            art party locavore wolf cliche high life echo park Austin. Cred
+                                                            vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                            farm-to-table.
+                                                        </p>
+                                                        <p class="mb-0">Fanny pack portland seitan DIY,
+                                                            art party locavore wolf cliche high life echo park Austin. Cred
+                                                            vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                            farm-to-table.
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <!-- end card -->
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
         
-                                </div> <!-- end Col-9 -->
+                                        <h4 class="card-title">Custom Tabs</h4>
+                                        <p class="card-title-desc">Example of custom tabs</p>
         
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs nav-tabs-custom nav-justified" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-bs-toggle="tab" href="#home1" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                                    <span class="d-none d-sm-block">Home</span> 
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#profile1" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                                    <span class="d-none d-sm-block">Profile</span> 
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#messages1" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                                    <span class="d-none d-sm-block">Messages</span>   
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-bs-toggle="tab" href="#settings1" role="tab">
+                                                    <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                                    <span class="d-none d-sm-block">Settings</span>    
+                                                </a>
+                                            </li>
+                                        </ul>
+        
+                                        <!-- Tab panes -->
+                                        <div class="tab-content p-3 text-muted">
+                                            <div class="tab-pane active" id="home1" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Raw denim you probably haven't heard of them jean shorts Austin.
+                                                    Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache
+                                                    cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                    butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi,
+                                                    qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+                                                    iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                    voluptate nisi qui.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane" id="profile1" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                                    single-origin coffee squid. Exercitation +1 labore velit, blog
+                                                    sartorial PBR leggings next level wes anderson artisan four loko
+                                                    farm-to-table craft beer twee. Qui photo booth letterpress,
+                                                    commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+                                                    vinyl cillum PBR. Homo nostrud organic, assumenda labore
+                                                    aesthetic magna delectus.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane" id="messages1" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                                                    sold out mcsweeney's organic lomo retro fanny pack lo-fi
+                                                    farm-to-table readymade. Messenger bag gentrify pitchfork
+                                                    tattooed craft beer, iphone skateboard locavore carles etsy
+                                                    salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                                    Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh
+                                                    mi whatever gluten-free carles.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane" id="settings1" role="tabpanel">
+                                                <p class="mb-0">
+                                                    Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                                    art party before they sold out master cleanse gluten-free squid
+                                                    scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                                    art party locavore wolf cliche high life echo park Austin. Cred
+                                                    vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                    farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
+                                                    mustache readymade keffiyeh craft.
+                                                </p>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+        
+        
+                        <!-- Collapse -->
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Default Collapse</h4>
+                                        <p class="card-title-desc mb-3">
+                                            You can use a link with the <code class="highlighter-rouge">href</code>
+                                            attribute, or a button with the <code class="highlighter-rouge">data-bs-target</code>
+                                            attribute. In both cases, the <code class="highlighter-rouge">data-bs-toggle="collapse"</code>
+                                            is required.
+                                        </p>
+        
+                                        <p>
+                                            <a class="btn btn-primary mt-1 me-1" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                Link with href
+                                            </a>
+                                            <button class="btn btn-primary mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                                Button with data-bs-target
+                                            </button>
+                                        </p>
+                                        <div class="collapse show" id="collapseExample">
+                                            <div class="card card-body mb-0">
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
                             </div>
         
-                        </div><!-- End row -->
+                            <div class="col-xl-6">
+                                <div class="card">
+                                    <div class="card-body">
+        
+                                        <h4 class="card-title">Accordion example</h4>
+                                        <p class="card-title-desc">Extend the default collapse behavior to create an accordion.</p>
+        
+        
+                                        <div id="accordion" class="custom-accordion">
+                                            <div class="card mb-1 shadow-none">
+                                                <a href="#collapseOne" class="text-dark" data-bs-toggle="collapse"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapseOne">
+                                                    <div class="card-header" id="headingOne">
+                                                        <h6 class="m-0">
+                                                            Collapsible Group Item #1
+                                                            <i class="mdi mdi-minus float-end accor-plus-icon"></i>
+                                                        </h6>
+                                                    </div>
+                                                </a>
+        
+                                                <div id="collapseOne" class="collapse show"
+                                                        aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia
+                                                        aute, non cupidatat skateboard dolor brunch. Food truck
+                                                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                                        nulla assumenda shoreditch et.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-1 shadow-none">
+                                                <a href="#collapseTwo" class="text-dark collapsed" data-bs-toggle="collapse"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapseTwo">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h6 class="m-0">
+                                                            Collapsible Group Item #2
+                                                            <i class="mdi mdi-minus float-end accor-plus-icon"></i>
+                                                        </h6>
+                                                    </div>
+                                                </a>
+                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                        data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        sunt aliqua put a bird on it squid single-origin coffee
+                                                        nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                                        helvetica, craft beer labore wes anderson cred nesciunt
+                                                        Leggings occaecat craft beer farm-to-table, raw denim
+                                                        accusamus labore sustainable VHS.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-0 shadow-none">
+                                                <a href="#collapseThree" class="text-dark collapsed" data-bs-toggle="collapse"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapseThree">
+                                                    <div class="card-header" id="headingThree">
+                                                        <h6 class="m-0">
+                                                            Collapsible Group Item #3
+                                                            <i class="mdi mdi-minus float-end accor-plus-icon"></i>
+                                                        </h6>
+                                                    </div>
+                                                </a>
+                                                <div id="collapseThree" class="collapse"
+                                                        aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                                    <div class="card-body">
+                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                                        accusamus terry richardson ad squid. 3 wolf moon officia
+                                                        aute, non cupidatat skateboard dolor brunch. Food truck
+                                                        sunt aliqua put a bird on it squid single-origin coffee
+                                                        nulla assumenda anderson cred nesciunt
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
-
-                <!-- Modal -->
-                <div class="modal fade" id="composemodal" tabindex="-1" role="dialog" aria-labelledby="composemodalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="composemodalTitle">New Message</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" placeholder="To">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                    <div class="mb-3">
-                                        <form method="post">
-                                            <textarea id="elm1" name="area"></textarea>
-                                        </form>
-                                    </div>
-
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send <i class="fab fa-telegram-plane ms-1"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 
                 <footer class="footer">
                     <div class="container-fluid">
@@ -1152,6 +1178,7 @@
                         </div>
                     </div>
                 </footer>
+                
             </div>
             <!-- end main content-->
 
@@ -1216,12 +1243,6 @@
         <script src="assets/libs/metismenu/metisMenu.min.js"></script>
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
-
-        <!--tinymce js-->
-        <script src="assets/libs/tinymce/tinymce.min.js"></script>
-
-        <!-- init js -->
-        <script src="assets/js/pages/form-editor.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 

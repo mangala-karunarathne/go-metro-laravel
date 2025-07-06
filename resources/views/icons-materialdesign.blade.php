@@ -4,19 +4,13 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Calendar | Upcube - Admin & Dashboard Template</title>
+        <title>Material Design Icons | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- Plugin css -->
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/core/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css">
-    
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -441,7 +435,7 @@
                             <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="mt-3">
-                            <h4 class="font-size-16 mb-1">Anne Mery</h4>
+                            <h4 class="font-size-16 mb-1">Julia Hudda</h4>
                             <span class="text-muted"><i class="ri-record-circle-line align-middle font-size-14 text-success"></i> Online</span>
                         </div>
                     </div>
@@ -686,12 +680,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Calendar</h4>
+                                    <h4 class="mb-sm-0">Material Design Icons</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
-                                            <li class="breadcrumb-item active">Calendar</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Icons</a></li>
+                                            <li class="breadcrumb-item active">Material Design Icons</li>
                                         </ol>
                                     </div>
 
@@ -700,111 +694,117 @@
                         </div>
                         <!-- end page title -->
                         
-                        <div class="row mb-4">
-                            <div class="col-xl-3">
-                                <div class="card h-100">
+                        <div class="row icons-demo-content">
+                            <div class="col-12">
+                                <div class="card">
+
                                     <div class="card-body">
-                                        <button type="button" class="btn font-16 btn-primary waves-effect waves-light w-100"
-                                            id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal">
-                                            Create New Event
-                                        </button>
-            
-                                        <div id="external-events">
-                                            <br>
-                                            <p class="text-muted">Drag and drop your event or click in the calendar</p>
-                                            <div class="external-event fc-event bg-success" data-class="bg-success">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>New Event
-                                                Planning
+                                        <h4 class="card-title">New Icons</h4>
+                                        <p class="card-title-desc mb-2">Use <code>&lt;i class="mdi mdi-speedometer-slow"&gt;&lt;/i&gt;</code> <span class="badge bg-success">v 5.8.55</span>.</p>
+
+                                        <div class="row icon-demo-content" id="newIcons"></div>
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card -->
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-4">All Icons</h4>
+                                        <div class="row icon-demo-content" id="icons"></div>
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card -->
+                            </div> <!-- end col -->
+                        </div> <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h4 class="card-title">Size</h4>
+
+                                        <div class="row icon-demo-content">
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-18px mdi-account"></i> mdi-18px
                                             </div>
-                                            <div class="external-event fc-event bg-info" data-class="bg-info">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Meeting
+
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-24px mdi-account"></i> mdi-24px
                                             </div>
-                                            <div class="external-event fc-event bg-warning" data-class="bg-warning">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Generating
-                                                Reports
+
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-36px mdi-account"></i> mdi-36px
                                             </div>
-                                            <div class="external-event fc-event bg-danger" data-class="bg-danger">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Create
-                                                New theme
+
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-48px mdi-account"></i> mdi-48px
                                             </div>
                                         </div>
-                                        
                                     </div>
                                 </div>
-                            </div> <!-- end col-->
-                            <div class="col-xl-9">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <div id="calendar"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- end col -->
-                        </div> <!-- end row-->
-                        <div style='clear:both'></div>
-            
-                        <!-- Add New Event MODAL -->
-                        <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header py-3 px-4">
-                                        <h5 class="modal-title" id="modal-title">Event</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-            
-                                    <div class="modal-body p-4">
-                                        <form class="needs-validation" name="event-form" id="form-event" novalidate>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Event Name</label>
-                                                        <input class="form-control" placeholder="Insert Event Name" type="text"
-                                                            name="title" id="event-title" required value="">
-                                                        <div class="invalid-feedback">Please provide a valid event name
-                                                        </div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Category</label>
-                                                        <select class="form-select" name="category" id="event-category">
-                                                            <option  selected> --Select-- </option>
-                                                            <option value="bg-danger">Danger</option>
-                                                            <option value="bg-success">Success</option>
-                                                            <option value="bg-primary">Primary</option>
-                                                            <option value="bg-info">Info</option>
-                                                            <option value="bg-dark">Dark</option>
-                                                            <option value="bg-warning">Warning</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a valid event
-                                                            category</div>
-                                                    </div>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                            <div class="row mt-2">
-                                                <div class="col-6">
-                                                    <button type="button" class="btn btn-danger"
-                                                        id="btn-delete-event">Delete</button>
-                                                </div> <!-- end col-->
-                                                <div class="col-6 text-end">
-                                                    <button type="button" class="btn btn-light me-1"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                        </form>
-                                    </div>
-                                </div>
-                                <!-- end modal-content-->
                             </div>
-                            <!-- end modal dialog-->
                         </div>
-                        <!-- end modal-->
-                        
-                    </div> <!-- container-fluid -->
-                </div>
-                <!-- End Page-content -->
-                
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h4 class="card-title">Rotate</h4>
+
+                                        <div class="row icon-demo-content">
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-rotate-45 mdi-account"></i> mdi-rotate-45
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-rotate-90 mdi-account"></i> mdi-rotate-90
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-rotate-135 mdi-account"></i> mdi-rotate-135
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-rotate-180 mdi-account"></i> mdi-rotate-180
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-rotate-225 mdi-account"></i> mdi-rotate-225
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-rotate-270 mdi-account"></i> mdi-rotate-270
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-rotate-315 mdi-account"></i> mdi-rotate-315
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h4 class="card-title">Spin</h4>
+
+                                        <div class="row icon-demo-content">
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-spin mdi-loading"></i> mdi-spin
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="mdi mdi-spin mdi-star"></i> mdi-spin
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end row -->
+
+                    </div><!-- container-fluid -->
+                    
+                </div><!-- End Page-content -->
+
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
@@ -819,12 +819,11 @@
                         </div>
                     </div>
                 </footer>
-                
-            </div>
-            <!-- end main content-->
 
-        </div>
-        <!-- END layout-wrapper -->
+            </div><!-- end main content-->
+
+        </div><!-- END layout-wrapper -->
+        
 
         <!-- Right Sidebar -->
         <div class="right-bar">
@@ -885,17 +884,8 @@
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- plugin js -->
-        <script src="assets/libs/moment/min/moment.min.js"></script>
-        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-        <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
-
-        <!-- Calendar init -->
-        <script src="assets/js/pages/calendar.init.js"></script>
+        <!-- materialdesign icon js-->
+        <script src="assets/js/pages/materialdesign.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 

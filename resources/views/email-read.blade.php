@@ -4,19 +4,13 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Calendar | Upcube - Admin & Dashboard Template</title>
+        <title>Read Email | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- Plugin css -->
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/core/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css">
-        <link rel="stylesheet" href="assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css">
-    
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -686,12 +680,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Calendar</h4>
+                                    <h4 class="mb-sm-0">Read Email</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
-                                            <li class="breadcrumb-item active">Calendar</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Email</a></li>
+                                            <li class="breadcrumb-item active">Read Email</li>
                                         </ol>
                                     </div>
 
@@ -699,111 +693,205 @@
                             </div>
                         </div>
                         <!-- end page title -->
-                        
-                        <div class="row mb-4">
-                            <div class="col-xl-3">
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <button type="button" class="btn font-16 btn-primary waves-effect waves-light w-100"
-                                            id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal">
-                                            Create New Event
-                                        </button>
-            
-                                        <div id="external-events">
-                                            <br>
-                                            <p class="text-muted">Drag and drop your event or click in the calendar</p>
-                                            <div class="external-event fc-event bg-success" data-class="bg-success">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>New Event
-                                                Planning
+
+                        <div class="row">
+                            <div class="col-12">
+                                <!-- Left sidebar -->
+                                <div class="email-leftbar card">
+                                    <button type="button" class="btn btn-danger btn-block waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#composemodal">
+                                        Compose
+                                    </button>
+                                    <div class="mail-list mt-4">
+                                        <a href="#" class="active"><i class="mdi mdi-email-outline me-2"></i> Inbox <span class="ms-1 float-end">(18)</span></a>
+                                        <a href="#"><i class="mdi mdi-star-outline me-2"></i>Starred</a>
+                                        <a href="#"><i class="mdi mdi-diamond-stone me-2"></i>Important</a>
+                                        <a href="#"><i class="mdi mdi-file-outline me-2"></i>Draft</a>
+                                        <a href="#"><i class="mdi mdi-email-check-outline me-2"></i>Sent Mail</a>
+                                        <a href="#"><i class="mdi mdi-trash-can-outline me-2"></i>Trash</a>
+                                    </div>
+
+                                    <h6 class="mt-4">Labels</h6>
+
+                                    <div class="mail-list mt-1">
+                                        <a href="#"><span class="mdi mdi-circle-outline text-info float-end"></span>Theme Support</a>
+                                        <a href="#"><span class="mdi mdi-circle-outline text-warning float-end"></span>Freelance</a>
+                                        <a href="#"><span class="mdi mdi-circle-outline text-primary float-end"></span>Social</a>
+                                        <a href="#"><span class="mdi mdi-circle-outline text-danger float-end"></span>Friends</a>
+                                        <a href="#"><span class="mdi mdi-circle-outline text-success float-end"></span>Family</a>
+                                    </div>
+
+                                    <h6 class="mt-4">Chat</h6>
+
+                                    <div class="mt-2">
+                                        <a href="#" class="d-flex">
+                                            <img class="me-3 rounded-circle" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image" height="36">
+                                            <div class="flex-1 chat-user-box overflow-hidden">
+                                                <p class="user-title m-0">Scott Median</p>
+                                                <p class="text-muted text-truncate">Hello</p>
                                             </div>
-                                            <div class="external-event fc-event bg-info" data-class="bg-info">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Meeting
+                                        </a>
+        
+                                        <a href="#" class="d-flex">
+                                            <img class="me-3 rounded-circle" src="assets/images/users/avatar-3.jpg" alt="Generic placeholder image" height="36">
+                                            <div class="flex-1 chat-user-box overflow-hidden">
+                                                <p class="user-title m-0">Julian Rosa</p>
+                                                <p class="text-muted text-truncate">What about our next..</p>
                                             </div>
-                                            <div class="external-event fc-event bg-warning" data-class="bg-warning">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Generating
-                                                Reports
+                                        </a>
+        
+                                        <a href="#" class="d-flex">
+                                            <img class="me-3 rounded-circle" src="assets/images/users/avatar-4.jpg" alt="Generic placeholder image" height="36">
+                                            <div class="flex-1 chat-user-box overflow-hidden">
+                                                <p class="user-title m-0">David Medina</p>
+                                                <p class="text-muted text-truncate">Yeah everything is fine</p>
                                             </div>
-                                            <div class="external-event fc-event bg-danger" data-class="bg-danger">
-                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Create
-                                                New theme
+                                        </a>
+        
+                                        <a href="#" class="d-flex">
+                                            <img class="me-3 rounded-circle" src="assets/images/users/avatar-6.jpg" alt="Generic placeholder image" height="36">
+                                            <div class="flex-1 chat-user-box overflow-hidden">
+                                                <p class="user-title m-0">Jay Baker</p>
+                                                <p class="text-muted text-truncate">Wow that's great</p>
+                                            </div>
+                                        </a>
+        
+                                    </div>
+                                </div>
+                                <!-- End Left sidebar -->
+
+                                <!-- Right Sidebar -->
+                                <div class="email-rightbar mb-3">
+
+                                    <div class="card">
+                                        <div class="btn-toolbar p-3" role="toolbar">
+                                            <div class="btn-group me-2 mb-2 mb-sm-0">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-inbox"></i></button>
+                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="fa fa-exclamation-circle"></i></button>
+                                                <button type="button" class="btn btn-primary waves-light waves-effect"><i class="far fa-trash-alt"></i></button>
+                                            </div>
+                                            <div class="btn-group me-2 mb-2 mb-sm-0">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-folder"></i> <i class="mdi mdi-chevron-down ms-1"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Updates</a>
+                                                    <a class="dropdown-item" href="#">Social</a>
+                                                    <a class="dropdown-item" href="#">Team Manage</a>
+                                                </div>
+                                            </div>
+                                            <div class="btn-group me-2 mb-2 mb-sm-0">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-tag"></i> <i class="mdi mdi-chevron-down ms-1"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Updates</a>
+                                                    <a class="dropdown-item" href="#">Social</a>
+                                                    <a class="dropdown-item" href="#">Team Manage</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="btn-group me-2 mb-2 mb-sm-0">
+                                                <button type="button" class="btn btn-primary waves-light waves-effect dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    More <i class="mdi mdi-dots-vertical ms-2"></i>
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <a class="dropdown-item" href="#">Mark as Unread</a>
+                                                    <a class="dropdown-item" href="#">Mark as Important</a>
+                                                    <a class="dropdown-item" href="#">Add to Tasks</a>
+                                                    <a class="dropdown-item" href="#">Add Star</a>
+                                                    <a class="dropdown-item" href="#">Mute</a>
+                                                </div>
                                             </div>
                                         </div>
-                                        
-                                    </div>
-                                </div>
-                            </div> <!-- end col-->
-                            <div class="col-xl-9">
-                                <div class="card mb-0">
-                                    <div class="card-body">
-                                        <div id="calendar"></div>
-                                    </div>
-                                </div>
-                            </div> <!-- end col -->
-                        </div> <!-- end row-->
-                        <div style='clear:both'></div>
-            
-                        <!-- Add New Event MODAL -->
-                        <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header py-3 px-4">
-                                        <h5 class="modal-title" id="modal-title">Event</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-            
-                                    <div class="modal-body p-4">
-                                        <form class="needs-validation" name="event-form" id="form-event" novalidate>
+
+                                        <div class="card-body">
+                                            <div class="d-flex mb-4">
+                                                <img class="me-3 rounded-circle avatar-sm" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image">
+                                                <div class="flex-1">
+                                                    <h5 class="font-size-14 my-1">Humberto D. Champion</h5>
+                                                    <small class="text-muted">support@domain.com</small>
+                                                </div>
+                                            </div>
+
+                                            <h4 class="font-size-16">This Week's Top Stories</h4>
+
+                                            <p>Dear Lorem Ipsum,</p>
+                                            <p>Praesent dui ex, dapibus eget mauris ut, finibus vestibulum enim. Quisque arcu leo, facilisis in fringilla id, luctus in tortor. Nunc vestibulum est quis orci varius viverra. Curabitur dictum volutpat massa vulputate molestie. In at felis ac velit maximus convallis.
+                                            </p>
+                                            <p>Sed elementum turpis eu lorem interdum, sed porttitor eros commodo. Nam eu venenatis tortor, id lacinia diam. Sed aliquam in dui et porta. Sed bibendum orci non tincidunt ultrices. Vivamus fringilla, mi lacinia dapibus condimentum, ipsum urna lacinia lacus, vel tincidunt mi nibh sit amet lorem.</p>
+                                            <p>Sincerly,</p>
+                                            <hr/>
+
                                             <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Event Name</label>
-                                                        <input class="form-control" placeholder="Insert Event Name" type="text"
-                                                            name="title" id="event-title" required value="">
-                                                        <div class="invalid-feedback">Please provide a valid event name
+                                                <div class="col-xl-2 col-6">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="assets/images/small/img-3.jpg" alt="Card image cap">
+                                                        <div class="py-2 text-center">
+                                                            <a href="" class="fw-medium">Download</a>
                                                         </div>
                                                     </div>
-                                                </div> <!-- end col-->
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label class="form-label">Category</label>
-                                                        <select class="form-select" name="category" id="event-category">
-                                                            <option  selected> --Select-- </option>
-                                                            <option value="bg-danger">Danger</option>
-                                                            <option value="bg-success">Success</option>
-                                                            <option value="bg-primary">Primary</option>
-                                                            <option value="bg-info">Info</option>
-                                                            <option value="bg-dark">Dark</option>
-                                                            <option value="bg-warning">Warning</option>
-                                                        </select>
-                                                        <div class="invalid-feedback">Please select a valid event
-                                                            category</div>
+                                                </div>
+                                                <div class="col-xl-2 col-6">
+                                                    <div class="card">
+                                                        <img class="card-img-top img-fluid" src="assets/images/small/img-4.jpg" alt="Card image cap">
+                                                        <div class="py-2 text-center">
+                                                            <a href="" class="fw-medium">Download</a>
+                                                        </div>
                                                     </div>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                            <div class="row mt-2">
-                                                <div class="col-6">
-                                                    <button type="button" class="btn btn-danger"
-                                                        id="btn-delete-event">Delete</button>
-                                                </div> <!-- end col-->
-                                                <div class="col-6 text-end">
-                                                    <button type="button" class="btn btn-light me-1"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
-                                                </div> <!-- end col-->
-                                            </div> <!-- end row-->
-                                        </form>
+                                                </div>
+                                            </div>
+
+                                            <a href="javascript: void(0);" class="btn btn-secondary waves-effect mt-4"><i class="mdi mdi-reply"></i> Reply</a>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <!-- end modal-content-->
+                                <!-- card -->
+
                             </div>
-                            <!-- end modal dialog-->
+                            <!-- end Col-9 -->
+
                         </div>
-                        <!-- end modal-->
+                        <!-- end row -->
+
                         
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="composemodal" tabindex="-1" role="dialog" aria-labelledby="composemodalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="composemodalTitle">New Message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="To">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                    <div class="mb-3">
+                                        <form method="post">
+                                            <textarea id="elm1" name="area"></textarea>
+                                        </form>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send <i class="fab fa-bs-telegram-plane ms-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <footer class="footer">
                     <div class="container-fluid">
@@ -819,7 +907,6 @@
                         </div>
                     </div>
                 </footer>
-                
             </div>
             <!-- end main content-->
 
@@ -885,17 +972,11 @@
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
 
-        <!-- plugin js -->
-        <script src="assets/libs/moment/min/moment.min.js"></script>
-        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
-        <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
-        <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
+        <!--tinymce js-->
+        <script src="assets/libs/tinymce/tinymce.min.js"></script>
 
-        <!-- Calendar init -->
-        <script src="assets/js/pages/calendar.init.js"></script>
+        <!-- init js -->
+        <script src="assets/js/pages/form-editor.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 

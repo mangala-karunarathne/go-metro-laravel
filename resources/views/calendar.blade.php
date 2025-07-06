@@ -4,13 +4,19 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Jquery Knob Charts | Upcube - Admin & Dashboard Template</title>
+        <title>Calendar | Upcube - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
+        <!-- Plugin css -->
+        <link rel="stylesheet" href="assets/libs/@fullcalendar/core/main.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/libs/@fullcalendar/daygrid/main.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/libs/@fullcalendar/bootstrap/main.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/libs/@fullcalendar/timegrid/main.min.css" type="text/css">
+    
         <!-- Bootstrap Css -->
         <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -435,7 +441,7 @@
                             <img src="assets/images/users/avatar-1.jpg" alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="mt-3">
-                            <h4 class="font-size-16 mb-1">Julia Hudda</h4>
+                            <h4 class="font-size-16 mb-1">Anne Mery</h4>
                             <span class="text-muted"><i class="ri-record-circle-line align-middle font-size-14 text-success"></i> Online</span>
                         </div>
                     </div>
@@ -680,12 +686,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                    <h4 class="mb-sm-0">Jquery Knob Charts</h4>
+                                    <h4 class="mb-sm-0">Calendar</h4>
 
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Charts</a></li>
-                                            <li class="breadcrumb-item active">Jquery Knob Charts</li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Upcube</a></li>
+                                            <li class="breadcrumb-item active">Calendar</li>
                                         </ol>
                                     </div>
 
@@ -694,82 +700,107 @@
                         </div>
                         <!-- end page title -->
                         
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="card">
+                        <div class="row mb-4">
+                            <div class="col-xl-3">
+                                <div class="card h-100">
                                     <div class="card-body">
-        
-                                        <h4 class="card-title">Examples</h4>
-                                        <p class="card-title-desc">Nice, downward compatible, touchable, jQuery dial</p>
-        
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="text-center" dir="ltr">
-                                                    <h5 class="font-size-14 mb-3">Disable display input</h5>
-                                                    <input class="knob" data-width="150" data-fgcolor="#5664d2" data-displayinput="false" value="35">
-                                                </div>
+                                        <button type="button" class="btn font-16 btn-primary waves-effect waves-light w-100"
+                                            id="btn-new-event" data-bs-toggle="modal" data-bs-target="#event-modal">
+                                            Create New Event
+                                        </button>
+            
+                                        <div id="external-events">
+                                            <br>
+                                            <p class="text-muted">Drag and drop your event or click in the calendar</p>
+                                            <div class="external-event fc-event bg-success" data-class="bg-success">
+                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>New Event
+                                                Planning
                                             </div>
-                                            <div class="col-lg-4">
-                                                <div class="text-center" dir="ltr">
-                                                    <h5 class="font-size-14 mb-3">Cursor mode</h5>
-                                                    <input class="knob" data-width="150" data-cursor="true" data-fgcolor="#ff3d60" value="29">
-                                                </div>
+                                            <div class="external-event fc-event bg-info" data-class="bg-info">
+                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Meeting
                                             </div>
-                                            <div class="col-lg-4">
-                                                <div class="text-center" dir="ltr">
-                                                    <h5 class="font-size-14 mb-3">Display previous value</h5>
-                                                    <input class="knob" data-width="150" data-min="-100" data-fgcolor="#fcb92c" data-displayprevious="true" value="44">
-                                                </div>
+                                            <div class="external-event fc-event bg-warning" data-class="bg-warning">
+                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Generating
+                                                Reports
                                             </div>
-                                        </div>
-        
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="text-center" dir="ltr">
-                                                    <h5 class="font-size-14 mb-3">Angle offset</h5>
-                                                    <input class="knob" data-width="150" data-angleoffset="90" data-linecap="round" data-fgcolor="#4aa3ff" value="35">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="text-center" dir="ltr">
-                                                    <h5 class="font-size-14 mb-3"> 5-digit values, step 1000</h5>
-                                                    <input class="knob" data-width="150" data-min="-15000" data-displayprevious="true" data-max="15000" data-step="1000" value="-11000" data-fgcolor="#343a40">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="text-center" dir="ltr">
-                                                    <h5 class="font-size-14 mb-3">Angle offset and arc</h5>
-                                                    <input class="knob" data-width="150" data-cursor="true" data-fgcolor="#1cbb8c" value="29">
-                                                </div>
+                                            <div class="external-event fc-event bg-danger" data-class="bg-danger">
+                                                <i class="mdi mdi-checkbox-blank-circle font-size-11 me-2"></i>Create
+                                                New theme
                                             </div>
                                         </div>
-        
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <div class="text-center" dir="ltr">
-                                                    <h5 class="font-size-14 mb-3">Readonly</h5>
-                                                    <input class="knob" data-width="150" data-height="150" data-linecap=round
-                                                            data-fgColor="#f06292" value="80" data-skin="tron" data-angleOffset="180"
-                                                            data-readOnly=true data-thickness=".1"/>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="text-center" dir="ltr">
-                                                    <h5 class="font-size-14 mb-3"> Angle offset and arc</h5>
-                                                    <input class="knob" data-width="150" data-height="150"
-                                                    data-displayPrevious=true data-fgColor="#8d6e63" data-skin="tron"
-                                                    data-cursor=true value="75" data-thickness=".2" data-angleOffset=-125
-                                                    data-angleArc=250 value="44"/>
-                                                </div>
-        
-                                            </div>
-                                        </div>
-        
+                                        
+                                    </div>
+                                </div>
+                            </div> <!-- end col-->
+                            <div class="col-xl-9">
+                                <div class="card mb-0">
+                                    <div class="card-body">
+                                        <div id="calendar"></div>
                                     </div>
                                 </div>
                             </div> <!-- end col -->
-                        </div> <!-- end row -->
+                        </div> <!-- end row-->
+                        <div style='clear:both'></div>
+            
+                        <!-- Add New Event MODAL -->
+                        <div class="modal fade" id="event-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header py-3 px-4">
+                                        <h5 class="modal-title" id="modal-title">Event</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+            
+                                    <div class="modal-body p-4">
+                                        <form class="needs-validation" name="event-form" id="form-event" novalidate>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Event Name</label>
+                                                        <input class="form-control" placeholder="Insert Event Name" type="text"
+                                                            name="title" id="event-title" required value="">
+                                                        <div class="invalid-feedback">Please provide a valid event name
+                                                        </div>
+                                                    </div>
+                                                </div> <!-- end col-->
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Category</label>
+                                                        <select class="form-select" name="category" id="event-category">
+                                                            <option  selected> --Select-- </option>
+                                                            <option value="bg-danger">Danger</option>
+                                                            <option value="bg-success">Success</option>
+                                                            <option value="bg-primary">Primary</option>
+                                                            <option value="bg-info">Info</option>
+                                                            <option value="bg-dark">Dark</option>
+                                                            <option value="bg-warning">Warning</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">Please select a valid event
+                                                            category</div>
+                                                    </div>
+                                                </div> <!-- end col-->
+                                            </div> <!-- end row-->
+                                            <div class="row mt-2">
+                                                <div class="col-6">
+                                                    <button type="button" class="btn btn-danger"
+                                                        id="btn-delete-event">Delete</button>
+                                                </div> <!-- end col-->
+                                                <div class="col-6 text-end">
+                                                    <button type="button" class="btn btn-light me-1"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-success" id="btn-save-event">Save</button>
+                                                </div> <!-- end col-->
+                                            </div> <!-- end row-->
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- end modal-content-->
+                            </div>
+                            <!-- end modal dialog-->
+                        </div>
+                        <!-- end modal-->
+                        
                     </div> <!-- container-fluid -->
                 </div>
                 <!-- End Page-content -->
@@ -854,9 +885,17 @@
         <script src="assets/libs/simplebar/simplebar.min.js"></script>
         <script src="assets/libs/node-waves/waves.min.js"></script>
 
-        <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script> 
+        <!-- plugin js -->
+        <script src="assets/libs/moment/min/moment.min.js"></script>
+        <script src="assets/libs/jquery-ui-dist/jquery-ui.min.js"></script>
+        <script src="assets/libs/@fullcalendar/core/main.min.js"></script>
+        <script src="assets/libs/@fullcalendar/bootstrap/main.min.js"></script>
+        <script src="assets/libs/@fullcalendar/daygrid/main.min.js"></script>
+        <script src="assets/libs/@fullcalendar/timegrid/main.min.js"></script>
+        <script src="assets/libs/@fullcalendar/interaction/main.min.js"></script>
 
-        <script src="assets/js/pages/jquery-knob.init.js"></script> 
+        <!-- Calendar init -->
+        <script src="assets/js/pages/calendar.init.js"></script>
 
         <script src="assets/js/app.js"></script>
 
